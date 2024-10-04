@@ -9,8 +9,14 @@ WHITE: #EEEEEE / rgb(238, 238, 238)
 
 */
 
+html,
 body {
   background-color: rgb(34, 40, 49);
+}
 
+#appContainer {
+  background-color: rgb(34, 40, 49);
+}
+* {
   color: rgb(238, 238, 238);
 }
