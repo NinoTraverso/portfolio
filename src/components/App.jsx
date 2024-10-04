@@ -2,6 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
 import Profile from "./Profile";
+import Projects from "./Projects";
+import Certificates from "./Certificates";
+import Other from "./Other";
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
 
       <div id="appContainer">
         <Profile />
+        <Projects />
+        <Certificates />
+        <Other />
       </div>
     </div>
   );
