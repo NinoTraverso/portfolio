@@ -9,16 +9,47 @@ WHITE: #EEEEEE / rgb(238, 238, 238)
 
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200&display=swap");
+
 html,
 body {
   background-color: rgb(34, 40, 49);
 }
-
 #appContainer {
   background-color: rgb(34, 40, 49);
 }
+
+#appContainer h1,
+#appContainer h2,
+#appContainer h3,
+#appContainer h4,
+#appContainer h5,
+#appContainer h6 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 200;
+}
+
 * {
   color: rgb(238, 238, 238);
+}
+/*------------------------------------------------------------------- HOME CONTENT -------------------*/
+#homeContainer {
+  width: 100%;
+}
+
+#homeContent {
+  background-color: rgb(34, 40, 49);
+  width: 90%;
+  right: 0;
+}
+
+/*------------------------------------------------------------------- ASIDE -------------------*/
+
+#asideContent {
+  width: 10%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
 }
 
 /*------------------------------------------------------------------- PROFILE -----------------*/
@@ -31,4 +62,12 @@ body {
 .logoContainer img {
   width: 140px;
   height: auto;
+}
+
+/*------------------------------------------------------------------- PROFILE -----------------*/
+
+.projectImage {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }

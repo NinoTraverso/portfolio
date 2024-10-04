@@ -1,9 +1,11 @@
-function Other() {
+import React, { forwardRef } from "react";
+
+const Other = forwardRef((props, ref) => {
   return (
-    <div>
-      <h1>Other</h1>
+    <div ref={ref} className="otherSection">
+      <h1 id="other">Projects</h1>
     </div>
   );
-}
+});
 
 export default Other;

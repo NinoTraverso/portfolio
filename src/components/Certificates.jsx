@@ -1,9 +1,11 @@
-function Certificates() {
+import React, { forwardRef } from "react";
+
+const Certificates = forwardRef((props, ref) => {
   return (
-    <div>
-      <h1>Certificates</h1>
+    <div ref={ref} className="certificatesSection">
+      <h1 id="certificates">Certificates</h1>
     </div>
   );
-}
+});
 
 export default Certificates;

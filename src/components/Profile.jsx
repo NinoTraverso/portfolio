@@ -1,20 +1,20 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-function Profile() {
+const Profile = forwardRef((props, ref) => {
   return (
-    <div>
-      <div className="d-flex flex-row jutify-content-start align-items-end mt-4 ms-4">
-        <div className="logoContainer ">
-          <img src="./assets/logo.png" alt="logoImage" />
-        </div>
+    <div ref={ref} className="profileSection">
+      <div className="d-flex flex-row">
         <div className="mx-3">
-          <h1>Nino J. Traverso</h1>
-          <h1>Web Developer & Designer</h1>
+          <h2>Nino J. Traverso</h2>
+          <h2>Web Developer & Designer</h2>
+        </div>
+        <div className="logoContainer">
+          <img src="./assets/profileImage.png" alt="logoImage" />
         </div>
       </div>
       <h1 id="profile">Profile</h1>
     </div>
   );
-}
+});
 
 export default Profile;
