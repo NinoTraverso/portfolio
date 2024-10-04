@@ -1,0 +1,16 @@
+/*
+
+COLORS
+
+DARK-GRAY: #222831 / rgb(34, 40, 49)
+GRAY: #393E46 / rgb(57, 62, 70)
+BLUE: #0092CA / rgb(0, 146, 202)
+WHITE: #EEEEEE / rgb(238, 238, 238)
+
+*/
+
+body {
+  background-color: rgb(34, 40, 49);
+
+  color: rgb(238, 238, 238);
+}
