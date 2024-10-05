@@ -30,7 +30,7 @@ function App() {
               <img src="./assets/logo.png" alt="logoImage" />
             </div>
             <button
-              className="profileSection"
+              className="profileSection asideButton mt-4"
               onClick={() => {
                 profileSection.current?.scrollIntoView({ behavior: "auto" });
               }}
@@ -38,7 +38,7 @@ function App() {
               Profile
             </button>
             <button
-              className="projectsSection"
+              className="projectsSection asideButton"
               onClick={() => {
                 projectsSection.current?.scrollIntoView({ behavior: "auto" });
               }}
@@ -46,7 +46,7 @@ function App() {
               Project
             </button>
             <button
-              className="certificatesSection"
+              className="certificatesSection asideButton"
               onClick={() => {
                 certificatesSection.current?.scrollIntoView({
                   behavior: "auto",
@@ -56,7 +56,7 @@ function App() {
               Certificaes
             </button>
             <button
-              className="otherSection"
+              className="otherSection asideButton"
               onClick={() => {
                 otherSection.current?.scrollIntoView({ behavior: "auto" });
               }}
@@ -64,7 +64,7 @@ function App() {
               Other
             </button>
             <button
-              className="contactSection"
+              className="contactSection asideButton"
               onClick={() => {
                 contactSection.current?.scrollIntoView({ behavior: "auto" });
               }}

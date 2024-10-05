@@ -9,14 +9,29 @@ WHITE: #EEEEEE / rgb(238, 238, 238)
 
 */
 
+/*
+COLOR PALETTE: 
+
+1) #364f6b / rgb(54,79,107) - blue
+2) #3fc1c9 / rgb(63,193,201) - light-blue
+3) #f5f5f5 / rgb(245,245,245) - whitesmoke
+4) #fc5185 / rgb(252,81,133) - pink
+5) #212121 / rgb(33,33,33) - dark-gray
+6) #757575 / rgb(117,117,117)- gray
+7) #BDBDBD / rgb(189,189,189) - light-gray
+8) #ffffff / rgb(255,255,255) - white
+
+
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200&display=swap");
 
 html,
 body {
-  background-color: rgb(34, 40, 49);
+  background-color: #212121;
 }
 #appContainer {
-  background-color: rgb(34, 40, 49);
+  background-color: #212121;
 }
 
 #appContainer h1,
@@ -38,7 +53,7 @@ body {
 }
 
 #homeContent {
-  background-color: rgb(34, 40, 49);
+  background-color: #212121;
   width: 90%;
   right: 0;
 }
@@ -50,6 +65,57 @@ body {
   height: 100vh;
   position: fixed;
   left: 0;
+}
+
+.asideButton {
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  background-color: #393e46;
+  color: #eeeeee;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 2px 12px;
+  position: relative;
+  text-decoration: none;
+  transition: 0.4s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+  width: 70%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.asideButton::after {
+  background-color: #eeeeee;
+  border-radius: 6px;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.4s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.asideButton:hover::after {
+  transform: translate(0, 0);
+  background-color: #fc5185;
+}
+
+.asideButton:hover {
+  border: 2px solid transparent;
+  color: #f5f5f5;
+  background-color: #fc5185;
+  transform: scale(1.05);
+  will-change: transform;
+  border-color: #fc5185;
 }
 
 /*------------------------------------------------------------------- PROFILE -----------------*/
