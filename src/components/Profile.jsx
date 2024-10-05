@@ -8,8 +8,8 @@ const Profile = forwardRef((props, ref) => {
           className="mx-3 mb-5 d-flex flex-column justify-content-center align-items-center"
           style={{ width: "60%" }}
         >
-          <h1>Nino J. Traverso</h1>
-          <h1>Web Developer & Designer</h1>
+          <h1>Skills</h1>
+
           <div
             id="skillsIcons"
             className="d-flex flex-wrap justify-content-around text-center mx-5"
@@ -64,10 +64,20 @@ const Profile = forwardRef((props, ref) => {
           </div>
         </div>
         <div
-          className="profileImage d-flex flex-column justify-content-end align-items-center mb-5"
+          className="profileImage d-flex flex-column justify-content-center align-items-center"
           style={{ width: "40%", height: "100vh" }}
         >
+          <h1>Web Developer & Designer</h1>
+          <h1>Nino J. Traverso</h1>
           <img src="./assets/profileImage.png" alt="profileImage" />
+          <h4 className="text-center mx-5">
+            With a diverse background in tourism, astronomy, and web
+            development, I excel in customer service, logistics, analytical
+            abilities, and technical skills. Proficient in HTML, CSS,
+            JavaScript, React and other technologies, I bring a unique blend of
+            service excellence, scientific insight, and technical expertise to
+            creatively tackle challenges across various roles and industries.
+          </h4>
         </div>
       </div>
     </div>

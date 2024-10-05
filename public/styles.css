@@ -181,17 +181,21 @@ COLOR PALETTE:
 }
 
 .profileImage {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 
 .profileImage img {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 
 #skillsIcons {
   background-color: rgba(63, 193, 201, 0.2);
+  background-image: url("./assets/skillsBackground.svg");
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image in the div */
   border-radius: 16px;
 }
 
@@ -218,12 +222,6 @@ COLOR PALETTE:
 
 */
 
-.projectImage {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-}
-
 /*------------------------------------------------------------------- PROJECT -----------------*/
 
 /*
@@ -244,6 +242,12 @@ COLOR PALETTE:
 #projects {
   height: 100vh;
   background-color: rgba(117, 117, 117, 0.2);
+}
+
+.projectImageContainer {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 /*-----------------------------------------------------1------------- CERTIFICATES -----------------*/

@@ -24,7 +24,7 @@ function App() {
           <aside
             id="asideContent"
             style={{ width: "10%" }}
-            className="d-flex flex-column justify-content-center align-items-center mx-5"
+            className="d-flex flex-column justify-content-center align-items-center mx-3"
           >
             <div className="logoContainer ">
               <img src="./assets/logo.png" alt="logoImage" />
