@@ -24,9 +24,9 @@ function App() {
           <aside
             id="asideContent"
             style={{ width: "10%" }}
-            className="d-flex flex-column justify-content-center align-items-center"
+            className="d-flex flex-column justify-content-center align-items-center mx-5"
           >
-            <div className="logoContainer">
+            <div className="logoContainer ">
               <img src="./assets/logo.png" alt="logoImage" />
             </div>
             <button
@@ -75,7 +75,7 @@ function App() {
         </div>
 
         {/* -------------------------------------------------------------------------------- appContainer --------------- */}
-        <div id="homeContent" style={{ width: "90%" }}>
+        <div id="homeContent" style={{ width: "90%" }} className="mx-5">
           <Profile ref={profileSection} id="profileSection" />
           <Projects ref={projectsSection} id="projectsSection" />
           <Certificates ref={certificatesSection} id="certificatesSection" />
