@@ -48,6 +48,21 @@ body {
   color: rgb(238, 238, 238);
 }
 /*------------------------------------------------------------------- HOME CONTENT -------------------*/
+/*
+COLOR PALETTE: 
+
+1) #364f6b / rgb(54,79,107) - blue
+2) #3fc1c9 / rgb(63,193,201) - light-blue
+3) #f5f5f5 / rgb(245,245,245) - whitesmoke
+4) #fc5185 / rgb(252,81,133) - pink
+5) #212121 / rgb(33,33,33) - dark-gray
+6) #757575 / rgb(117,117,117)- gray
+7) #BDBDBD / rgb(189,189,189) - light-gray
+8) #ffffff / rgb(255,255,255) - white
+
+
+*/
+
 #homeContainer {
   width: 100%;
 }
@@ -60,11 +75,36 @@ body {
 
 /*------------------------------------------------------------------- ASIDE -------------------*/
 
+/*
+COLOR PALETTE: 
+
+1) #364f6b / rgb(54,79,107) - blue
+2) #3fc1c9 / rgb(63,193,201) - light-blue
+3) #f5f5f5 / rgb(245,245,245) - whitesmoke
+4) #fc5185 / rgb(252,81,133) - pink
+5) #212121 / rgb(33,33,33) - dark-gray
+6) #757575 / rgb(117,117,117)- gray
+7) #BDBDBD / rgb(189,189,189) - light-gray
+8) #ffffff / rgb(255,255,255) - white
+
+
+*/
+
 #asideContent {
   width: 10%;
   height: 100vh;
   position: fixed;
   left: 0;
+}
+
+.logoContainer {
+  width: 140px;
+  height: auto;
+}
+
+.logoContainer img {
+  width: 140px;
+  height: auto;
 }
 
 .asideButton {
@@ -120,17 +160,63 @@ body {
 
 /*------------------------------------------------------------------- PROFILE -----------------*/
 
-.logoContainer {
-  width: 140px;
+/*
+COLOR PALETTE: 
+
+1) #364f6b / rgb(54,79,107) - blue
+2) #3fc1c9 / rgb(63,193,201) - light-blue
+3) #f5f5f5 / rgb(245,245,245) - whitesmoke
+4) #fc5185 / rgb(252,81,133) - pink
+5) #212121 / rgb(33,33,33) - dark-gray
+6) #757575 / rgb(117,117,117)- gray
+7) #BDBDBD / rgb(189,189,189) - light-gray
+8) #ffffff / rgb(255,255,255) - white
+
+
+*/
+
+#profile {
+  height: 100vh;
+  background-color: #fc5185;
+}
+
+.profileImage {
+  width: 400px;
   height: auto;
 }
 
-.logoContainer img {
-  width: 140px;
+.profileImage img {
+  width: 400px;
   height: auto;
+}
+
+#skillsIcons {
+  background-color: rgba(63, 193, 201, 0.2);
+  border-radius: 16px;
+}
+
+#skillsIcons i {
+  font-size: 5em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
 
 /*------------------------------------------------------------------- PROFILE -----------------*/
+
+/*
+COLOR PALETTE: 
+
+1) #364f6b / rgb(54,79,107) - blue
+2) #3fc1c9 / rgb(63,193,201) - light-blue
+3) #f5f5f5 / rgb(245,245,245) - whitesmoke
+4) #fc5185 / rgb(252,81,133) - pink
+5) #212121 / rgb(33,33,33) - dark-gray
+6) #757575 / rgb(117,117,117)- gray
+7) #BDBDBD / rgb(189,189,189) - light-gray
+8) #ffffff / rgb(255,255,255) - white
+
+
+*/
 
 .projectImage {
   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,

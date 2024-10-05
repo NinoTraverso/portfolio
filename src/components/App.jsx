@@ -75,7 +75,7 @@ function App() {
         </div>
 
         {/* -------------------------------------------------------------------------------- appContainer --------------- */}
-        <div id="homeContent" style={{ width: "90%" }} className="mx-5">
+        <div id="homeContent" style={{ width: "90%" }} className="ms-5">
           <Profile ref={profileSection} id="profileSection" />
           <Projects ref={projectsSection} id="projectsSection" />
           <Certificates ref={certificatesSection} id="certificatesSection" />
