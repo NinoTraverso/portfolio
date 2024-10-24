@@ -176,7 +176,6 @@ COLOR PALETTE:
 */
 
 #profile {
-  height: 100vh;
   background-color: rgba(54, 79, 107, 0.4);
 }
 
@@ -240,14 +239,36 @@ COLOR PALETTE:
 */
 
 #projects {
-  height: 100vh;
-  background-color: rgba(117, 117, 117, 0.2);
+  background-color: rgba(54, 79, 107, 0.4);
 }
 
-.projectImageContainer {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+.projectName {
+  color: #fc5185;
+}
+
+#projectImgContainer {
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+}
+
+#projectImgContainer img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+}
+
+.projectDetailsButton {
+  color: #f5f5f5;
+  text-decoration: none;
+  background-color: #364f6b;
+  border: 2px solid #3fc1c9;
+  border-radius: 6px;
+  transition: background-color 0.8s ease, border-color 0.8s ease;
+}
+
+.projectDetailsButton:hover {
+  background-color: #3fc1c9;
 }
 
 /*-----------------------------------------------------1------------- CERTIFICATES -----------------*/
@@ -268,8 +289,7 @@ COLOR PALETTE:
 */
 
 #certificates {
-  height: 100vh;
-  background-color: #364f6b;
+  background-color: rgba(54, 79, 107, 0.4);
 }
 
 /*------------------------------------------------------------------- OTHER -----------------*/
@@ -290,8 +310,7 @@ COLOR PALETTE:
 */
 
 #other {
-  height: 100vh;
-  background-color: #364f6b;
+  background-color: rgba(54, 79, 107, 0.4);
 }
 
 /*------------------------------------------------------------------- CONTACT -----------------*/
@@ -312,6 +331,5 @@ COLOR PALETTE:
 */
 
 #contact {
-  height: 100vh;
-  background-color: #364f6b;
+  background-color: rgba(54, 79, 107, 0.4);
 }
