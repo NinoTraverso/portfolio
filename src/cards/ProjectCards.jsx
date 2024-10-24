@@ -15,7 +15,7 @@ function ProjectCards(props) {
           <h5 className="details projectDetails my-4">
             <span className="fw-semibold">Technology:</span> {props.technology}
           </h5>
-          <div className="d-flex justify-content-start my-4">
+          <div className="d-flex justify-content-start mt-4">
             <a
               href={props.projectLink}
               className="projectDetailsButton text-decoration-none text-start py-2 px-3"

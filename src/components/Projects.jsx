@@ -3,7 +3,7 @@ import ProjectCards from "../cards/ProjectCards";
 import projects from "../projects";
 function createProjectCard(project) {
   return (
-    <div key={project.id} className="col-12 mb-5 d-flex justify-content-center">
+    <div key={project.id} className="col-12 pb-5 d-flex justify-content-center">
       <ProjectCards
         id={project.id}
         img={project.img}
