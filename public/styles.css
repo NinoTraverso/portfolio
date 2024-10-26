@@ -91,6 +91,8 @@ COLOR PALETTE:
 */
 
 #asideContent {
+  background-color: rgba(54, 79, 107, 0.4);
+
   width: 10%;
   height: 100vh;
   position: fixed;
@@ -98,12 +100,12 @@ COLOR PALETTE:
 }
 
 .logoContainer {
-  width: 140px;
+  width: 100px;
   height: auto;
 }
 
 .logoContainer img {
-  width: 140px;
+  width: 100px;
   height: auto;
 }
 
@@ -176,7 +178,6 @@ COLOR PALETTE:
 */
 
 #profile {
-  background-color: rgba(54, 79, 107, 0.4);
 }
 
 .profileImage {
@@ -239,7 +240,6 @@ COLOR PALETTE:
 */
 
 #projects {
-  background-color: rgba(54, 79, 107, 0.4);
 }
 
 .projectName {
@@ -289,7 +289,130 @@ COLOR PALETTE:
 */
 
 #certificates {
-  background-color: rgba(54, 79, 107, 0.4);
+}
+
+#certificatesCarousel {
+  height: 80vh;
+}
+
+#carouselCard {
+  width: 400px;
+  height: 400px;
+}
+
+.carouselImage {
+  width: 400px;
+  height: 600px;
+}
+
+#cardContainer {
+  width: 1100px;
+  border-radius: 20px;
+  background-color: #121212;
+  padding: 40px;
+  padding-left: 0px;
+  border: 2px solid #c0c0c0;
+  min-height: 500px; /*   allows the card container to stay the same height */
+}
+
+.newCarouselImage {
+  width: 400px;
+  height: 300px;
+  margin-left: -50px;
+}
+
+@media screen and (max-width: 1240px) {
+  #cardContainer {
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .newCarouselImage {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  #cardContainer {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .newCarouselImage {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #cardContainer {
+    width: 500px;
+    padding-left: 40px;
+    padding-top: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .newCarouselImage {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #cardContainer {
+    width: 400px;
+    padding-left: 40px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .newCarouselImage {
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #cardContainer {
+    width: 280px;
+    padding-left: 40px;
+    padding-top: 0px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .newCarouselImage {
+    width: 160px;
+    height: 160px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .inTextCard {
+    max-width: 420px;
+    width: 200px;
+    text-align: center;
+  }
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 /*------------------------------------------------------------------- OTHER -----------------*/
@@ -310,7 +433,6 @@ COLOR PALETTE:
 */
 
 #other {
-  background-color: rgba(54, 79, 107, 0.4);
 }
 
 /*------------------------------------------------------------------- CONTACT -----------------*/
@@ -331,5 +453,4 @@ COLOR PALETTE:
 */
 
 #contact {
-  background-color: rgba(54, 79, 107, 0.4);
 }
