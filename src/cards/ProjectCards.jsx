@@ -20,7 +20,7 @@ function ProjectCards(props) {
               href={props.projectLink}
               className="projectDetailsButton text-decoration-none text-start py-2 px-3"
             >
-              Details
+              Visit
             </a>
           </div>
         </div>

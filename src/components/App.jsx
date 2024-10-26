@@ -70,7 +70,6 @@ function App() {
           <Profile ref={profileSection} id="profileSection" />
           <Projects ref={projectsSection} id="projectsSection" />
           <Certificates ref={certificatesSection} id="certificatesSection" />
-
           <Contact ref={contactSection} id="contactSection" />
         </div>
       </div>

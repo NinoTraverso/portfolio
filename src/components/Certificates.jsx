@@ -25,7 +25,9 @@ const Certificates = forwardRef((props, ref) => {
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3">Full-Stack Developer</h1>
+                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold">
+                    Full-Stack Developer
+                  </h1>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Intensive 6-months long Full-Stack Developer course
@@ -34,16 +36,25 @@ const Certificates = forwardRef((props, ref) => {
                     </h6>
                     <ul>
                       <li>
-                        Skills: HTML &#47; CSS &#47; FlexBox JavaScript &#47;
-                        Github &#47; DOM &#47; OOP&#47; Bootstrap &#47; SASS
-                        &#47; Typescript &#47; Angular &#47; C# Programming
-                        &#47; SQL Server &#47; ASP.NET WEBFORMS &#47; ADO.NET
-                        &#47; ASP.NET MVC
+                        <span className="fw-bold">Skills: </span>
+
+                        <span className="fw-lighter">
+                          HTML &#47; CSS &#47; FlexBox JavaScript &#47; Github
+                          &#47; DOM &#47; OOP&#47; Bootstrap &#47; SASS &#47;
+                          Typescript &#47; Angular &#47; C# Programming &#47;
+                          SQL Server &#47; ASP.NET WEBFORMS &#47; ADO.NET &#47;
+                          ASP.NET MVC
+                        </span>
                       </li>
-                      <li>Level: Intermediate&#47;Expert</li>
-                      <li>Time: 1000+ hours</li>
                       <li>
-                        Institution:{" "}
+                        <span className="fw-bold">Level: </span>{" "}
+                        Intermediate&#47;Expert
+                      </li>
+                      <li>
+                        <span className="fw-bold">Time: </span> 1000+ hours
+                      </li>
+                      <li>
+                        <span className="fw-bold">Institution: </span>{" "}
                         <a
                           href="https://epicode.com/en/"
                           className="text-decoration-none text-white"
@@ -51,7 +62,9 @@ const Certificates = forwardRef((props, ref) => {
                           EPICODE
                         </a>{" "}
                       </li>
-                      <li>Grading: 74&#37;</li>
+                      <li>
+                        <span className="fw-bold">Grade: </span> 74&#37;
+                      </li>
                     </ul>
                   </span>
                 </div>
@@ -74,7 +87,9 @@ const Certificates = forwardRef((props, ref) => {
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 t">Web Development</h1>
+                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">
+                    Web Development
+                  </h1>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Full-Stack Development skills covering HTML, CSS,
@@ -83,21 +98,30 @@ const Certificates = forwardRef((props, ref) => {
                       beginners and enhancing job readiness.
                     </h6>
                     <ul>
-                      <li>
-                        Skills: HTML, CSS, JavaScript, jQuery, Node.js,
-                        Express.js, APIs, PostgreSQL, React.js
+                      <li className="fw-italic">
+                        <span className="fw-bold">Skills: </span> HTML, CSS,
+                        JavaScript, jQuery, Node.js, Express.js, APIs,
+                        PostgreSQL, React.js
                       </li>
-                      <li>Level: Intermediate</li>
-                      <li>Time: 63 hours</li>
-                      <li>Institution: Udemy</li>
-                      <li>Grading: 100&#37;</li>
+                      <li>
+                        <span className="fw-bold">Level: </span> Intermediate
+                      </li>
+                      <li>
+                        <span className="fw-bold">Time: </span> 63 hours
+                      </li>
+                      <li>
+                        <span className="fw-bold">Institution: </span> Udemy
+                      </li>
+                      <li>
+                        <span className="fw-bold">Grade: </span> 100&#37;
+                      </li>
                     </ul>
                   </span>
                 </div>
               </div>
             </div>
 
-            {/* ----------------------------------- UX / UI + FIMGA  ---------------------------------------- */}
+            {/* ----------------------------------- WEB AND MOBILE DESIGN  ---------------------------------------- */}
             <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
@@ -113,7 +137,9 @@ const Certificates = forwardRef((props, ref) => {
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 t">Web & Mobile Design</h1>
+                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">
+                    Web & Mobile Design
+                  </h1>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Develop modern web and mobile design skills covering UX
@@ -122,14 +148,23 @@ const Certificates = forwardRef((props, ref) => {
                       products.
                     </h6>
                     <ul>
-                      <li>
-                        Skills: UX & UI; Figma; Design Tools; Responsive Design;
-                        Color Theory & Typography; Branding & Identity Design
+                      <li className="fw-italic">
+                        <span className="fw-bold">Skills: </span> UX & UI;
+                        Figma; Design Tools; Responsive Design; Color Theory &
+                        Typography; Branding & Identity Design
                       </li>
-                      <li>Level: Foundational</li>
-                      <li>Time: 28 hours</li>
-                      <li>Institution: Udemy</li>
-                      <li>Grading: 100&#37;</li>
+                      <li>
+                        <span className="fw-bold">Level: </span> Foundational
+                      </li>
+                      <li>
+                        <span className="fw-bold">Time: </span> 28 hours
+                      </li>
+                      <li>
+                        <span className="fw-bold">Institution: </span> Udemy
+                      </li>
+                      <li>
+                        <span className="fw-bold">Grade: </span> 100&#37;
+                      </li>
                     </ul>
                   </span>
                 </div>
@@ -153,21 +188,30 @@ const Certificates = forwardRef((props, ref) => {
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 t">Astronomy</h1>
+                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">Astronomy</h1>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Study of celestial bodies, planet, moons, asteroids and
                       comet characteristics.
                     </h6>
                     <ul>
-                      <li>
-                        Skills: Astronomy; Solar Systems; Chemistry; Geology;
-                        Astrobiology
+                      <li className="fw-italic">
+                        <span className="fw-bold">Skills: </span> Astronomy;
+                        Solar Systems; Chemistry; Geology; Astrobiology
                       </li>
-                      <li>Level: Foundational</li>
-                      <li>Time: 29 hours</li>
-                      <li>Institution: Coursera &#40;Caltech&#41;</li>
-                      <li>Grading: 100&#37;</li>
+                      <li>
+                        <span className="fw-bold">Level: </span> Foundational
+                      </li>
+                      <li>
+                        <span className="fw-bold">Time: </span> 29 hours
+                      </li>
+                      <li>
+                        <span className="fw-bold">Institution: </span> Coursera
+                        &#40;Caltech&#41;
+                      </li>
+                      <li>
+                        <span className="fw-bold">Grade: </span> 100&#37;
+                      </li>
                     </ul>
                   </span>
                 </div>
@@ -191,7 +235,9 @@ const Certificates = forwardRef((props, ref) => {
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 t">Astrobiology</h1>
+                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">
+                    Astrobiology
+                  </h1>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Fourth planet in our Solar System and has an average
@@ -199,17 +245,23 @@ const Certificates = forwardRef((props, ref) => {
                       every 687 days.{" "}
                     </h6>
                     <ul>
-                      <li>
-                        Skills: Solar System; Biology; Microbiology;
-                        Astrobiology
+                      <li className="fw-italic">
+                        <span className="fw-bold">Skills: </span> Solar System;
+                        Biology; Microbiology; Astrobiology
                       </li>
-                      <li>Level: Foundational</li>
-                      <li>Time: 11 hours</li>
                       <li>
-                        Institution: Coursera &#40;The University of
-                        Edinburgh&#41;
+                        <span className="fw-bold">Level: </span> Foundational
                       </li>
-                      <li>Grading: 100&#37;</li>
+                      <li>
+                        <span className="fw-bold">Time: </span> 11 hours
+                      </li>
+                      <li>
+                        <span className="fw-bold">Institution: </span> Coursera
+                        &#40;The University of Edinburgh&#41;
+                      </li>
+                      <li>
+                        <span className="fw-bold">Grade: </span> 100&#37;
+                      </li>
                     </ul>
                   </span>
                 </div>
@@ -233,7 +285,7 @@ const Certificates = forwardRef((props, ref) => {
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 t">Japanese</h1>
+                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">Japanese</h1>
                   <span className="inTextCard">
                     <h6 className="py-3">
                       This is the zone between Mars and Jupiter where we can
@@ -241,15 +293,25 @@ const Certificates = forwardRef((props, ref) => {
                       compositions.
                     </h6>
                     <ul>
-                      <li>
-                        Skills: Basic vocabulary; Fundemental grammar;
-                        Pronounciating; Listening; Conversational phrase and
-                        expressions; Language related cultural insights
+                      <li className="fw-italic">
+                        <span className="fw-bold">Skills: </span> Basic
+                        vocabulary; Fundemental grammar; Pronounciating;
+                        Listening; Conversational phrase and expressions;
+                        Language related cultural insights
                       </li>
-                      <li>Level: Foundational</li>
-                      <li>Time: 30 hours</li>
-                      <li>Institution: EDX &#40;Waseda University&#41;</li>
-                      <li>Grading: 100&#37;</li>
+                      <li>
+                        <span className="fw-bold">Level: </span> Foundational
+                      </li>
+                      <li>
+                        <span className="fw-bold">Time: </span> 30 hours
+                      </li>
+                      <li>
+                        <span className="fw-bold">Institution: </span> EDX
+                        &#40;Waseda University&#41;
+                      </li>
+                      <li>
+                        <span className="fw-bold">Grade: </span> 100&#37;
+                      </li>
                     </ul>
                   </span>
                 </div>
