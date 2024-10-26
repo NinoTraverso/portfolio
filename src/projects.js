@@ -22,7 +22,7 @@ const projects = [
     name: "Exoplore",
     img: "../assets/projectsImages/exoplore.jpg",
     description:
-      "For this project I used the Nasa API for exoplanets, which I used to create an informative yet simple website on the exoplanet theme, with a page home page giving insights on exoplanets, a page to view the list of all exoplanets with their relevant data, and a page for the project info.",
+      "For this project I used the Nasa API for exoplanets, which I used to create an informative yet simple website on the exoplanet theme, with a page home page giving insights on exoplanets, a page to view the list of all exoplanets with their relevant data using NASA's API, and a page for the project info.",
     technology: "HTML, CSS, JS, React",
     projectLink: "https://exoplore.vercel.app",
   },
