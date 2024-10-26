@@ -4,14 +4,12 @@ import "bootstrap/dist/css/bootstrap.css";
 import Profile from "./Profile";
 import Projects from "./Projects";
 import Certificates from "./Certificates";
-import Other from "./Other";
 import Contact from "./Contact";
 
 function App() {
   const profileSection = useRef(null);
   const projectsSection = useRef(null);
   const certificatesSection = useRef(null);
-  const otherSection = useRef(null);
   const contactSection = useRef(null);
 
   return (
@@ -55,14 +53,7 @@ function App() {
             >
               Certificaes
             </button>
-            <button
-              className="otherSection asideButton"
-              onClick={() => {
-                otherSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
-            >
-              Other
-            </button>
+
             <button
               className="contactSection asideButton"
               onClick={() => {
@@ -79,7 +70,7 @@ function App() {
           <Profile ref={profileSection} id="profileSection" />
           <Projects ref={projectsSection} id="projectsSection" />
           <Certificates ref={certificatesSection} id="certificatesSection" />
-          <Other ref={otherSection} id="otherSection" />
+
           <Contact ref={contactSection} id="contactSection" />
         </div>
       </div>
