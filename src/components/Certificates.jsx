@@ -1,5 +1,4 @@
 import React, { forwardRef } from "react";
-import Carousel from "react-bootstrap/Carousel";
 
 const Certificates = forwardRef((props, ref) => {
   return (
