@@ -55,7 +55,11 @@ function App() {
       <meta name="description" content="Nino Traverso Digital Portfolio." />
       <meta name="keywords" content="portfolio, web design, web development" />
       <div id="homeContainer" className="d-flex flex-row">
-        <div id="homeContent" style={{ width: "95%" }} className="ms-5">
+        <div
+          id="homeContent"
+          style={{ height: "95%", width: "95%" }}
+          className="ms-5"
+        >
           <div ref={profileSection} id="profileSection">
             <Profile />
           </div>
@@ -65,14 +69,14 @@ function App() {
           <div ref={certificatesSection} id="certificatesSection">
             <Certificates />
           </div>
-          <div ref={contactSection} id="contactSection">
+          <div ref={contactSection} id="contactSection" className="mb-5">
             <Contact />
           </div>
         </div>
 
-        <aside
-          id="asideContent"
-          className="d-flex flex-column justify-content-center align-items-center"
+        <navbar
+          id="navbarContent"
+          className="d-none d-xl-flex flex-column  justify-content-center align-items-center"
         >
           <button
             className={`sectionButton sectionOne my-3 ${
@@ -118,7 +122,57 @@ function App() {
           >
             <span className="buttonText">Contact</span>
           </button>
-        </aside>
+        </navbar>
+        <div
+          id="smallNavbar"
+          className="d-flex d-xl-none flex-row justify-content-center align-items-center py-4"
+          style={{ height: "5%", width: "100%" }}
+        >
+          <button
+            className={`smallSectionButton sectionOne my-5 ${
+              activeButton === "Profile" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Profile");
+              profileSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Profile</span>
+          </button>
+          <button
+            className={`smallSectionButton sectionTwo my-5 ${
+              activeButton === "Projects" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Projects");
+              projectsSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Projects</span>
+          </button>
+          <button
+            className={`smallSectionButton sectionThree my-5 ${
+              activeButton === "Certificates" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Certificates");
+              certificatesSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Certificates</span>
+          </button>
+          <button
+            className={`smallSectionButton sectionFour my-5 ${
+              activeButton === "Contact" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Contact");
+              contactSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Contact</span>
+          </button>
+        </div>
       </div>
     </div>
   );
