@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
 import Profile from "./Profile";
@@ -12,66 +12,113 @@ function App() {
   const certificatesSection = useRef(null);
   const contactSection = useRef(null);
 
+  const [activeButton, setActiveButton] = useState("Profile");
+
+  useEffect(() => {
+    const sections = [
+      { ref: profileSection, name: "Profile" },
+      { ref: projectsSection, name: "Projects" },
+      { ref: certificatesSection, name: "Certificates" },
+      { ref: contactSection, name: "Contact" },
+    ];
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionName = sections.find(
+            (section) => section.ref.current === entry.target
+          ).name;
+          setActiveButton(sectionName);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, {
+      root: null,
+      threshold: 0.6,
+    });
+
+    sections.forEach((section) => {
+      if (section.ref.current) observer.observe(section.ref.current);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        if (section.ref.current) observer.unobserve(section.ref.current);
+      });
+    };
+  }, []);
+
   return (
     <div id="appContainer">
       <title>NinoTraversoPortfolio</title>
       <meta name="description" content="Nino Traverso Digital Portfolio." />
       <meta name="keywords" content="portfolio, web design, web development" />
       <div id="homeContainer" className="d-flex flex-row">
-        <div style={{ width: "10%" }}>
-          <aside
-            id="asideContent"
-            style={{ width: "10%" }}
-            className="d-flex flex-column justify-content-center align-items-center me-3"
+        <div id="homeContent" style={{ width: "95%" }} className="ms-5">
+          <div ref={profileSection} id="profileSection">
+            <Profile />
+          </div>
+          <div ref={projectsSection} id="projectsSection">
+            <Projects />
+          </div>
+          <div ref={certificatesSection} id="certificatesSection">
+            <Certificates />
+          </div>
+          <div ref={contactSection} id="contactSection">
+            <Contact />
+          </div>
+        </div>
+
+        <aside
+          id="asideContent"
+          className="d-flex flex-column justify-content-center align-items-center"
+        >
+          <button
+            className={`sectionButton sectionOne my-3 ${
+              activeButton === "Profile" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Profile");
+              profileSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
           >
-            <div className="logoContainer ">
-              <img src="./assets/logo.png" alt="logoImage" />
-            </div>
-            <button
-              className="profileSection asideButton mt-4"
-              onClick={() => {
-                profileSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
-            >
-              Profile
-            </button>
-            <button
-              className="projectsSection asideButton"
-              onClick={() => {
-                projectsSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
-            >
-              Project
-            </button>
-            <button
-              className="certificatesSection asideButton"
-              onClick={() => {
-                certificatesSection.current?.scrollIntoView({
-                  behavior: "auto",
-                });
-              }}
-            >
-              Certificaes
-            </button>
-
-            <button
-              className="contactSection asideButton"
-              onClick={() => {
-                contactSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
-            >
-              Contact
-            </button>
-          </aside>
-        </div>
-
-        {/* -------------------------------------------------------------------------------- appContainer --------------- */}
-        <div id="homeContent" style={{ width: "90%" }} className="ms-5">
-          <Profile ref={profileSection} id="profileSection" />
-          <Projects ref={projectsSection} id="projectsSection" />
-          <Certificates ref={certificatesSection} id="certificatesSection" />
-          <Contact ref={contactSection} id="contactSection" />
-        </div>
+            <span className="buttonText">Profile</span>
+          </button>
+          <button
+            className={`sectionButton sectionTwo my-3 ${
+              activeButton === "Projects" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Projects");
+              projectsSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Projects</span>
+          </button>
+          <button
+            className={`sectionButton sectionThree my-3 ${
+              activeButton === "Certificates" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Certificates");
+              certificatesSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Certificates</span>
+          </button>
+          <button
+            className={`sectionButton sectionFour my-3 ${
+              activeButton === "Contact" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Contact");
+              contactSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Contact</span>
+          </button>
+        </aside>
       </div>
     </div>
   );

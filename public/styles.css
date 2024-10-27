@@ -65,12 +65,52 @@ COLOR PALETTE:
 
 #homeContainer {
   width: 100%;
+  background-color: #212121;
 }
 
 #homeContent {
   background-color: #212121;
-  width: 90%;
-  right: 0;
+  width: 95%;
+}
+
+#asideContent {
+  width: 5%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  z-index: 100;
+}
+
+.sectionButton {
+  width: 20px;
+  height: 20px;
+  background-color: #364f6b;
+  border: none;
+  border-radius: 45%;
+  position: relative;
+  transition: width 0.4s, height 0.4s;
+}
+
+.sectionButton:hover,
+.sectionButton.active {
+  width: 26px;
+  height: 26px;
+  background-color: #3fc1c9;
+}
+
+.buttonText {
+  display: none;
+  font-size: 14px;
+  margin-left: 10px;
+  position: absolute;
+  left: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sectionButton:hover .buttonText,
+.sectionButton.active .buttonText {
+  display: inline-block;
 }
 
 /*------------------------------------------------------------------- ASIDE -------------------*/
@@ -88,7 +128,7 @@ COLOR PALETTE:
 8) #ffffff / rgb(255,255,255) - white
 
 
-*/
+
 
 #asideContent {
   background-color: rgba(54, 79, 107, 0.4);
@@ -159,7 +199,7 @@ COLOR PALETTE:
   will-change: transform;
   border-color: #fc5185;
 }
-
+*/
 /*------------------------------------------------------------------- PROFILE -----------------*/
 
 /*
