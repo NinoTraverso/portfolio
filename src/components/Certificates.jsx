@@ -3,9 +3,6 @@ import React, { forwardRef } from "react";
 const Certificates = forwardRef((props, ref) => {
   return (
     <div ref={ref} className="certificatesSection">
-      <h1 id="certificates" className="my-0">
-        Certificates
-      </h1>
       <div id="certificatesCarousel d-flex justify-content-center align-items-center">
         <div id="carouselExampleFade" className="carousel slide carousel-fade">
           <div className="carousel-inner">
@@ -13,9 +10,9 @@ const Certificates = forwardRef((props, ref) => {
             <div className="carousel-item active d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
-                className="align-self-center d-flex flex-column flex-md-row mx-5"
+                className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
-                <div className="align-self-center">
+                <div className="d-none d-xl-block align-self-center">
                   <img
                     src="../assets/certificatesImages/FullStack.png"
                     alt="mercury"
@@ -24,48 +21,55 @@ const Certificates = forwardRef((props, ref) => {
                   />
                 </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold">
+                <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard">
                     Full-Stack Developer
                   </h1>
+                  <div className="d-block d-xl-none align-self-center">
+                    <img
+                      src="../assets/certificatesImages/FullStack.png"
+                      alt="mercury"
+                      className="newCarouselImage"
+                      style={{ borderRadius: "20px" }}
+                    />
+                  </div>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Intensive 6-months long Full-Stack Developer course
                       developing Front-End, Back-End and a Full-Stack web
                       applications, both independently and in small groups.
                     </h6>
-                    <ul>
-                      <li>
-                        <span className="fw-bold">Skills: </span>
 
-                        <span className="fw-lighter">
-                          HTML &#47; CSS &#47; FlexBox JavaScript &#47; Github
-                          &#47; DOM &#47; OOP&#47; Bootstrap &#47; SASS &#47;
-                          Typescript &#47; Angular &#47; C# Programming &#47;
-                          SQL Server &#47; ASP.NET WEBFORMS &#47; ADO.NET &#47;
-                          ASP.NET MVC
-                        </span>
-                      </li>
-                      <li>
-                        <span className="fw-bold">Level: </span>{" "}
-                        Intermediate&#47;Expert
-                      </li>
-                      <li>
-                        <span className="fw-bold">Time: </span> 1000+ hours
-                      </li>
-                      <li>
-                        <span className="fw-bold">Institution: </span>{" "}
-                        <a
-                          href="https://epicode.com/en/"
-                          className="text-decoration-none text-white"
-                        >
-                          EPICODE
-                        </a>{" "}
-                      </li>
-                      <li>
-                        <span className="fw-bold">Grade: </span> 74&#37;
-                      </li>
-                    </ul>
+                    <p>
+                      <span className="fw-bold">Skills: </span>
+
+                      <span className="fw-lighter">
+                        HTML &#47; CSS &#47; FlexBox JavaScript &#47; Github
+                        &#47; DOM &#47; OOP&#47; Bootstrap &#47; SASS &#47;
+                        Typescript &#47; Angular &#47; C# Programming &#47; SQL
+                        Server &#47; ASP.NET WEBFORMS &#47; ADO.NET &#47;
+                        ASP.NET MVC
+                      </span>
+                    </p>
+                    <p>
+                      <span className="fw-bold">Level: </span>{" "}
+                      Intermediate&#47;Expert
+                    </p>
+                    <p>
+                      <span className="fw-bold">Time: </span> 1000+ hours
+                    </p>
+                    <p>
+                      <span className="fw-bold">Institution: </span>{" "}
+                      <a
+                        href="https://epicode.com/en/"
+                        className="text-decoration-none text-white"
+                      >
+                        EPICODE
+                      </a>{" "}
+                    </p>
+                    <p>
+                      <span className="fw-bold">Grade: </span> 74&#37;
+                    </p>
                   </span>
                 </div>
               </div>
@@ -75,7 +79,7 @@ const Certificates = forwardRef((props, ref) => {
             <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
-                className="align-self-center d-flex flex-column flex-md-row mx-5"
+                className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
                 <div className="align-self-center">
                   <img
@@ -86,8 +90,8 @@ const Certificates = forwardRef((props, ref) => {
                   />
                 </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">
+                <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
                     Web Development
                   </h1>
                   <span className="inTextCard">
@@ -97,25 +101,24 @@ const Certificates = forwardRef((props, ref) => {
                       projects aimed at building a solid foundation for
                       beginners and enhancing job readiness.
                     </h6>
-                    <ul>
-                      <li className="fw-italic">
-                        <span className="fw-bold">Skills: </span> HTML, CSS,
-                        JavaScript, jQuery, Node.js, Express.js, APIs,
-                        PostgreSQL, React.js
-                      </li>
-                      <li>
-                        <span className="fw-bold">Level: </span> Intermediate
-                      </li>
-                      <li>
-                        <span className="fw-bold">Time: </span> 63 hours
-                      </li>
-                      <li>
-                        <span className="fw-bold">Institution: </span> Udemy
-                      </li>
-                      <li>
-                        <span className="fw-bold">Grade: </span> 100&#37;
-                      </li>
-                    </ul>
+
+                    <p className="fw-italic">
+                      <span className="fw-bold">Skills: </span> HTML, CSS,
+                      JavaScript, jQuery, Node.js, Express.js, APIs, PostgreSQL,
+                      React.js
+                    </p>
+                    <p>
+                      <span className="fw-bold">Level: </span> Intermediate
+                    </p>
+                    <p>
+                      <span className="fw-bold">Time: </span> 63 hours
+                    </p>
+                    <p>
+                      <span className="fw-bold">Institution: </span> Udemy
+                    </p>
+                    <p>
+                      <span className="fw-bold">Grade: </span> 100&#37;
+                    </p>
                   </span>
                 </div>
               </div>
@@ -125,7 +128,7 @@ const Certificates = forwardRef((props, ref) => {
             <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
-                className="align-self-center d-flex flex-column flex-md-row mx-5"
+                className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
                 <div className="align-self-center">
                   <img
@@ -136,8 +139,8 @@ const Certificates = forwardRef((props, ref) => {
                   />
                 </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">
+                <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
                     Web & Mobile Design
                   </h1>
                   <span className="inTextCard">
@@ -147,25 +150,24 @@ const Certificates = forwardRef((props, ref) => {
                       learn create visually appealing and user-friendly digital
                       products.
                     </h6>
-                    <ul>
-                      <li className="fw-italic">
-                        <span className="fw-bold">Skills: </span> UX & UI;
-                        Figma; Design Tools; Responsive Design; Color Theory &
-                        Typography; Branding & Identity Design
-                      </li>
-                      <li>
-                        <span className="fw-bold">Level: </span> Foundational
-                      </li>
-                      <li>
-                        <span className="fw-bold">Time: </span> 28 hours
-                      </li>
-                      <li>
-                        <span className="fw-bold">Institution: </span> Udemy
-                      </li>
-                      <li>
-                        <span className="fw-bold">Grade: </span> 100&#37;
-                      </li>
-                    </ul>
+
+                    <p className="fw-italic">
+                      <span className="fw-bold">Skills: </span> UX & UI; Figma;
+                      Design Tools; Responsive Design; Color Theory &
+                      Typography; Branding & Identity Design
+                    </p>
+                    <p>
+                      <span className="fw-bold">Level: </span> Foundational
+                    </p>
+                    <p>
+                      <span className="fw-bold">Time: </span> 28 hours
+                    </p>
+                    <p>
+                      <span className="fw-bold">Institution: </span> Udemy
+                    </p>
+                    <p>
+                      <span className="fw-bold">Grade: </span> 100&#37;
+                    </p>
                   </span>
                 </div>
               </div>
@@ -176,7 +178,7 @@ const Certificates = forwardRef((props, ref) => {
             <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
-                className="align-self-center d-flex flex-column flex-md-row mx-5"
+                className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
                 <div className="align-self-center">
                   <img
@@ -187,32 +189,33 @@ const Certificates = forwardRef((props, ref) => {
                   />
                 </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">Astronomy</h1>
+                <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                    Astronomy
+                  </h1>
                   <span className="inTextCard">
                     <h6 className="py-3 ">
                       Study of celestial bodies, planet, moons, asteroids and
                       comet characteristics.
                     </h6>
-                    <ul>
-                      <li className="fw-italic">
-                        <span className="fw-bold">Skills: </span> Astronomy;
-                        Solar Systems; Chemistry; Geology; Astrobiology
-                      </li>
-                      <li>
-                        <span className="fw-bold">Level: </span> Foundational
-                      </li>
-                      <li>
-                        <span className="fw-bold">Time: </span> 29 hours
-                      </li>
-                      <li>
-                        <span className="fw-bold">Institution: </span> Coursera
-                        &#40;Caltech&#41;
-                      </li>
-                      <li>
-                        <span className="fw-bold">Grade: </span> 100&#37;
-                      </li>
-                    </ul>
+
+                    <p className="fw-italic">
+                      <span className="fw-bold">Skills: </span> Astronomy; Solar
+                      Systems; Chemistry; Geology; Astrobiology
+                    </p>
+                    <p>
+                      <span className="fw-bold">Level: </span> Foundational
+                    </p>
+                    <p>
+                      <span className="fw-bold">Time: </span> 29 hours
+                    </p>
+                    <p>
+                      <span className="fw-bold">Institution: </span> Coursera
+                      &#40;Caltech&#41;
+                    </p>
+                    <p>
+                      <span className="fw-bold">Grade: </span> 100&#37;
+                    </p>
                   </span>
                 </div>
               </div>
@@ -223,7 +226,7 @@ const Certificates = forwardRef((props, ref) => {
             <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
-                className="align-self-center d-flex flex-column flex-md-row mx-5"
+                className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
                 <div className="align-self-center">
                   <img
@@ -234,8 +237,8 @@ const Certificates = forwardRef((props, ref) => {
                   />
                 </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">
+                <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
                     Astrobiology
                   </h1>
                   <span className="inTextCard">
@@ -244,25 +247,24 @@ const Certificates = forwardRef((props, ref) => {
                       surface temperature of -65 C&deg; and orbiting the Sun
                       every 687 days.{" "}
                     </h6>
-                    <ul>
-                      <li className="fw-italic">
-                        <span className="fw-bold">Skills: </span> Solar System;
-                        Biology; Microbiology; Astrobiology
-                      </li>
-                      <li>
-                        <span className="fw-bold">Level: </span> Foundational
-                      </li>
-                      <li>
-                        <span className="fw-bold">Time: </span> 11 hours
-                      </li>
-                      <li>
-                        <span className="fw-bold">Institution: </span> Coursera
-                        &#40;The University of Edinburgh&#41;
-                      </li>
-                      <li>
-                        <span className="fw-bold">Grade: </span> 100&#37;
-                      </li>
-                    </ul>
+
+                    <p className="fw-italic">
+                      <span className="fw-bold">Skills: </span> Solar System;
+                      Biology; Microbiology; Astrobiology
+                    </p>
+                    <p>
+                      <span className="fw-bold">Level: </span> Foundational
+                    </p>
+                    <p>
+                      <span className="fw-bold">Time: </span> 11 hours
+                    </p>
+                    <p>
+                      <span className="fw-bold">Institution: </span> Coursera
+                      &#40;The University of Edinburgh&#41;
+                    </p>
+                    <p>
+                      <span className="fw-bold">Grade: </span> 100&#37;
+                    </p>
                   </span>
                 </div>
               </div>
@@ -273,7 +275,7 @@ const Certificates = forwardRef((props, ref) => {
             <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
-                className="align-self-center d-flex flex-column flex-md-row mx-5"
+                className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
                 <div className="align-self-center">
                   <img
@@ -284,35 +286,36 @@ const Certificates = forwardRef((props, ref) => {
                   />
                 </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center align-items-md-start mx-5">
-                  <h1 className="ms-0 ms-md-4 py-3 fw-semibold t">Japanese</h1>
+                <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                    Japanese
+                  </h1>
                   <span className="inTextCard">
                     <h6 className="py-3">
                       This is the zone between Mars and Jupiter where we can
                       find asteroids of different sizes, shapes and
                       compositions.
                     </h6>
-                    <ul>
-                      <li className="fw-italic">
-                        <span className="fw-bold">Skills: </span> Basic
-                        vocabulary; Fundemental grammar; Pronounciating;
-                        Listening; Conversational phrase and expressions;
-                        Language related cultural insights
-                      </li>
-                      <li>
-                        <span className="fw-bold">Level: </span> Foundational
-                      </li>
-                      <li>
-                        <span className="fw-bold">Time: </span> 30 hours
-                      </li>
-                      <li>
-                        <span className="fw-bold">Institution: </span> EDX
-                        &#40;Waseda University&#41;
-                      </li>
-                      <li>
-                        <span className="fw-bold">Grade: </span> 100&#37;
-                      </li>
-                    </ul>
+
+                    <p className="fw-italic">
+                      <span className="fw-bold">Skills: </span> Basic
+                      vocabulary; Fundemental grammar; Pronounciating;
+                      Listening; Conversational phrase and expressions; Language
+                      related cultural insights
+                    </p>
+                    <p>
+                      <span className="fw-bold">Level: </span> Foundational
+                    </p>
+                    <p>
+                      <span className="fw-bold">Time: </span> 30 hours
+                    </p>
+                    <p>
+                      <span className="fw-bold">Institution: </span> EDX
+                      &#40;Waseda University&#41;
+                    </p>
+                    <p>
+                      <span className="fw-bold">Grade: </span> 100&#37;
+                    </p>
                   </span>
                 </div>
               </div>

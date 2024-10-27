@@ -18,9 +18,7 @@ function createProjectCard(project) {
 
 const Projects = forwardRef((props, ref) => {
   return (
-    <div id="projects" ref={ref} className="projectsSection">
-      <h1 className="mx-3 my-0">Projects</h1>
-
+    <div id="projects" ref={ref} className="projectsSection ">
       <div>{projects.map(createProjectCard)}</div>
     </div>
   );

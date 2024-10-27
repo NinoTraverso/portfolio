@@ -50,86 +50,34 @@ function App() {
   }, []);
 
   return (
-    <div id="appContainer">
+    <div
+      id="appContainer"
+      className="d-flex justify-content-center align-items-center"
+    >
       <title>NinoTraversoPortfolio</title>
       <meta name="description" content="Nino Traverso Digital Portfolio." />
       <meta name="keywords" content="portfolio, web design, web development" />
-      <div id="homeContainer" className="d-flex flex-row">
-        <div
-          id="homeContent"
-          style={{ height: "95%", width: "95%" }}
-          className="ms-5"
-        >
-          <div ref={profileSection} id="profileSection">
-            <Profile />
-          </div>
-          <div ref={projectsSection} id="projectsSection">
-            <Projects />
-          </div>
-          <div ref={certificatesSection} id="certificatesSection">
-            <Certificates />
-          </div>
-          <div ref={contactSection} id="contactSection" className="mb-5">
-            <Contact />
-          </div>
+      <div id="homeContainer" className="d-flex flex-column flex-row">
+        <div ref={profileSection} id="profileSection">
+          <Profile />
+        </div>
+        <div ref={projectsSection} id="projectsSection">
+          <Projects />
+        </div>
+        <div ref={certificatesSection} id="certificatesSection">
+          <Certificates />
+        </div>
+        <div ref={contactSection} id="contactSection" className="mb-5">
+          <Contact />
         </div>
 
-        <navbar
-          id="navbarContent"
-          className="d-none d-xl-flex flex-column  justify-content-center align-items-center"
-        >
-          <button
-            className={`sectionButton sectionOne my-3 ${
-              activeButton === "Profile" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Profile");
-              profileSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Profile</span>
-          </button>
-          <button
-            className={`sectionButton sectionTwo my-3 ${
-              activeButton === "Projects" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Projects");
-              projectsSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Projects</span>
-          </button>
-          <button
-            className={`sectionButton sectionThree my-3 ${
-              activeButton === "Certificates" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Certificates");
-              certificatesSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Certificates</span>
-          </button>
-          <button
-            className={`sectionButton sectionFour my-3 ${
-              activeButton === "Contact" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Contact");
-              contactSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Contact</span>
-          </button>
-        </navbar>
         <div
           id="smallNavbar"
           className="d-flex d-xl-none flex-row justify-content-center align-items-center py-4"
           style={{ height: "5%", width: "100%" }}
         >
           <button
-            className={`smallSectionButton sectionOne my-5 ${
+            className={`smallSectionButton sectionOne my-3 ${
               activeButton === "Profile" ? "active" : ""
             }`}
             onClick={() => {
@@ -140,7 +88,7 @@ function App() {
             <span className="buttonText">Profile</span>
           </button>
           <button
-            className={`smallSectionButton sectionTwo my-5 ${
+            className={`smallSectionButton sectionTwo my-3 ${
               activeButton === "Projects" ? "active" : ""
             }`}
             onClick={() => {
@@ -151,7 +99,7 @@ function App() {
             <span className="buttonText">Projects</span>
           </button>
           <button
-            className={`smallSectionButton sectionThree my-5 ${
+            className={`smallSectionButton sectionThree my-3 ${
               activeButton === "Certificates" ? "active" : ""
             }`}
             onClick={() => {
@@ -162,7 +110,7 @@ function App() {
             <span className="buttonText">Certificates</span>
           </button>
           <button
-            className={`smallSectionButton sectionFour my-5 ${
+            className={`smallSectionButton sectionFour my-3 ${
               activeButton === "Contact" ? "active" : ""
             }`}
             onClick={() => {
