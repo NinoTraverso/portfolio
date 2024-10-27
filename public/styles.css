@@ -85,89 +85,21 @@ COLOR PALETTE:
 6) #757575 / rgb(117,117,117)- gray
 7) #BDBDBD / rgb(189,189,189) - light-gray
 8) #ffffff / rgb(255,255,255) - white
-
-
-
-
-#navbarContent {
-  background-color: rgba(54, 79, 107, 0.4);
-
-  width: 10%;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-}
-
-.logoContainer {
-  width: 100px;
-  height: auto;
-}
-
-.logoContainer img {
-  width: 100px;
-  height: auto;
-}
-
-.navbarButton {
-  border: 1px solid currentColor;
-  border-radius: 6px;
-  background-color: #393e46;
-  color: #eeeeee;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  overflow: hidden;
-  padding: 2px 12px;
-  position: relative;
-  text-decoration: none;
-  transition: 0.4s transform ease-in-out;
-  will-change: transform;
-  z-index: 0;
-  width: 70%;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.navbarButton::after {
-  background-color: #eeeeee;
-  border-radius: 6px;
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(-100%, 0) rotate(10deg);
-  transform-origin: top left;
-  transition: 0.4s transform ease-out;
-  will-change: transform;
-  z-index: -1;
-}
-
-.navbarButton:hover::after {
-  transform: translate(0, 0);
-  background-color: #fc5185;
-}
-
-.navbarButton:hover {
-  border: 2px solid transparent;
-  color: #f5f5f5;
-  background-color: #fc5185;
-  transform: scale(1.05);
-  will-change: transform;
-  border-color: #fc5185;
-}
 */
 
-#Navbar {
-  background-color: #f5f5f5;
-  color: #212121;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0; /* Aligns it with the left edge of the screen */
-  z-index: 100; /* Ensures it stays on top of other elements */
+#navbar {
+  width: 60%;
+  z-index: 100;
+}
+
+#navLogo {
+  width: 60px;
+  height: auto;
+}
+
+#navLogo img {
+  width: 60px;
+  height: auto;
 }
 
 .SectionButton {
@@ -189,7 +121,7 @@ COLOR PALETTE:
 
 .SectionButton:hover .buttonText,
 .SectionButton.active .buttonText {
-  color: #364f6b;
+  color: #ffffff;
   display: inline-block;
 }
 /*------------------------------------------------------------------- PROFILE -----------------*/
@@ -205,8 +137,6 @@ COLOR PALETTE:
 6) #757575 / rgb(117,117,117)- gray
 7) #BDBDBD / rgb(189,189,189) - light-gray
 8) #ffffff / rgb(255,255,255) - white
-
-
 */
 
 #profileIntro {

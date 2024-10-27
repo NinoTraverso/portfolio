@@ -60,52 +60,59 @@ function App() {
       <div id="homeContainer" className="d-flex flex-column flex-row">
         <navbar
           id="navbar"
-          className="d-flex  flex-row justify-content-end align-items-center py-3 fixed-top"
+          className="d-flex flex-row justify-content-between align-items-center py-3 fixed-top mx-auto"
         >
-          <button
-            className={`SectionButton sectionOne my-3 mx-2 ${
-              activeButton === "Profile" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Profile");
-              profileSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Profile</span>
-          </button>
-          <button
-            className={`SectionButton sectionTwo my-3 mx-2 ${
-              activeButton === "Projects" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Projects");
-              projectsSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Projects</span>
-          </button>
-          <button
-            className={`SectionButton sectionThree my-3 mx-2 ${
-              activeButton === "Certificates" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Certificates");
-              certificatesSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Certificates</span>
-          </button>
-          <button
-            className={`SectionButton sectionFour my-3 mx-2 ${
-              activeButton === "Contact" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Contact");
-              contactSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Contact</span>
-          </button>
+          <div id="navLogo" className="mx-4">
+            <img src="../assets/logo.png" alt="" />
+          </div>
+          <div className="mx-5">
+            <button
+              className={`SectionButton sectionOne my-3 mx-2 ${
+                activeButton === "Profile" ? "active" : ""
+              }`}
+              onClick={() => {
+                setActiveButton("Profile");
+                profileSection.current?.scrollIntoView({ behavior: "auto" });
+              }}
+            >
+              <span className="buttonText">Profile</span>
+            </button>
+            <button
+              className={`SectionButton sectionTwo my-3 mx-2 ${
+                activeButton === "Projects" ? "active" : ""
+              }`}
+              onClick={() => {
+                setActiveButton("Projects");
+                projectsSection.current?.scrollIntoView({ behavior: "auto" });
+              }}
+            >
+              <span className="buttonText">Projects</span>
+            </button>
+            <button
+              className={`SectionButton sectionThree my-3 mx-2 ${
+                activeButton === "Certificates" ? "active" : ""
+              }`}
+              onClick={() => {
+                setActiveButton("Certificates");
+                certificatesSection.current?.scrollIntoView({
+                  behavior: "auto",
+                });
+              }}
+            >
+              <span className="buttonText">Certificates</span>
+            </button>
+            <button
+              className={`SectionButton sectionFour my-3 mx-2 ${
+                activeButton === "Contact" ? "active" : ""
+              }`}
+              onClick={() => {
+                setActiveButton("Contact");
+                contactSection.current?.scrollIntoView({ behavior: "auto" });
+              }}
+            >
+              <span className="buttonText">Contact</span>
+            </button>
+          </div>
         </navbar>
         <div ref={profileSection} id="profileSection">
           <Profile />
