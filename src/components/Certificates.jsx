@@ -34,7 +34,7 @@ const Certificates = forwardRef((props, ref) => {
                     />
                   </div>
                   <span className="inTextCard">
-                    <h6 className="py-3 ">
+                    <h6 className="py-4 text-center text-xl-start ">
                       Intensive 6-months long Full-Stack Developer course
                       developing Front-End, Back-End and a Full-Stack web
                       applications, both independently and in small groups.
@@ -76,26 +76,34 @@ const Certificates = forwardRef((props, ref) => {
             </div>
 
             {/* ----------------------------------- WEB DEVELOPER ---------------------------------------- */}
-            <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
+            <div className="carousel-item active d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
                 className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
-                <div className="align-self-center">
+                <div className="d-none d-xl-block align-self-center">
                   <img
                     src="../assets/certificatesImages/WebDevelopment.png"
-                    alt="venus"
+                    alt="mercury"
                     className="newCarouselImage"
                     style={{ borderRadius: "20px" }}
                   />
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
-                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard">
                     Web Development
                   </h1>
+                  <div className="d-block d-xl-none align-self-center">
+                    <img
+                      src="../assets/certificatesImages/WebDevelopment.png"
+                      alt="mercury"
+                      className="newCarouselImage"
+                      style={{ borderRadius: "20px" }}
+                    />
+                  </div>
                   <span className="inTextCard">
-                    <h6 className="py-3 ">
+                    <h6 className="py-4 text-center text-xl-start ">
                       Full-Stack Development skills covering HTML, CSS,
                       JavaScript, Node.js, React, and more, with practical
                       projects aimed at building a solid foundation for
@@ -125,26 +133,34 @@ const Certificates = forwardRef((props, ref) => {
             </div>
 
             {/* ----------------------------------- WEB AND MOBILE DESIGN  ---------------------------------------- */}
-            <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
+            <div className="carousel-item active d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
                 className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
-                <div className="align-self-center">
+                <div className="d-none d-xl-block align-self-center">
                   <img
                     src="../assets/certificatesImages/UxUiFigma.png"
-                    alt="earth"
+                    alt="mercury"
                     className="newCarouselImage"
                     style={{ borderRadius: "20px" }}
                   />
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
-                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard">
                     Web & Mobile Design
                   </h1>
+                  <div className="d-block d-xl-none align-self-center">
+                    <img
+                      src="../assets/certificatesImages/UxUiFigma.png"
+                      alt="mercury"
+                      className="newCarouselImage"
+                      style={{ borderRadius: "20px" }}
+                    />
+                  </div>
                   <span className="inTextCard">
-                    <h6 className="py-3 ">
+                    <h6 className="py-4 text-center text-xl-start ">
                       Develop modern web and mobile design skills covering UX
                       and UI principles, Figma and essential design tools to
                       learn create visually appealing and user-friendly digital
@@ -175,26 +191,34 @@ const Certificates = forwardRef((props, ref) => {
 
             {/* ----------------------------------- SOLAR SYSTEM ---------------------------------------- */}
 
-            <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
+            <div className="carousel-item active d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
                 className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
-                <div className="align-self-center">
+                <div className="d-none d-xl-block align-self-center">
                   <img
                     src="../assets/certificatesImages/TheScienceOfTheSolarSystem.png"
-                    alt="moon"
+                    alt="mercury"
                     className="newCarouselImage"
                     style={{ borderRadius: "20px" }}
                   />
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
-                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard">
                     Astronomy
                   </h1>
+                  <div className="d-block d-xl-none align-self-center">
+                    <img
+                      src="../assets/certificatesImages/TheScienceOfTheSolarSystem.png"
+                      alt="mercury"
+                      className="newCarouselImage"
+                      style={{ borderRadius: "20px" }}
+                    />
+                  </div>
                   <span className="inTextCard">
-                    <h6 className="py-3 ">
+                    <h6 className="py-4 text-center text-xl-start ">
                       Study of celestial bodies, planet, moons, asteroids and
                       comet characteristics.
                     </h6>
@@ -222,27 +246,34 @@ const Certificates = forwardRef((props, ref) => {
             </div>
 
             {/* ----------------------------------- ASTROBIOLOGY ---------------------------------------- */}
-
-            <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
+            <div className="carousel-item active d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
                 className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
-                <div className="align-self-center">
+                <div className="d-none d-xl-block align-self-center">
                   <img
                     src="../assets/certificatesImages/AstrobiologyAndTheSearchForExtraterrestrialLife.png"
-                    alt="mars"
+                    alt="mercury"
                     className="newCarouselImage"
                     style={{ borderRadius: "20px" }}
                   />
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
-                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard">
                     Astrobiology
                   </h1>
+                  <div className="d-block d-xl-none align-self-center">
+                    <img
+                      src="../assets/certificatesImages/AstrobiologyAndTheSearchForExtraterrestrialLife.png"
+                      alt="mercury"
+                      className="newCarouselImage"
+                      style={{ borderRadius: "20px" }}
+                    />
+                  </div>
                   <span className="inTextCard">
-                    <h6 className="py-3 ">
+                    <h6 className="py-4 text-center text-xl-start ">
                       Fourth planet in our Solar System and has an average
                       surface temperature of -65 C&deg; and orbiting the Sun
                       every 687 days.{" "}
@@ -272,26 +303,34 @@ const Certificates = forwardRef((props, ref) => {
 
             {/* ----------------------------------- JAPANESE ---------------------------------------- */}
 
-            <div className="carousel-item d-flex flex-column flex-xl-row justify-content-center align-items-center">
+            <div className="carousel-item active d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div
                 id="cardContainer"
                 className="align-self-center d-flex flex-column flex-xl-row mx-5"
               >
-                <div className="align-self-center">
+                <div className="d-none d-xl-block align-self-center">
                   <img
                     src="../assets/certificatesImages/Japanese.png"
-                    alt="asteroidBelt"
+                    alt="mercury"
                     className="newCarouselImage"
                     style={{ borderRadius: "20px" }}
                   />
                 </div>
 
                 <div className="d-flex flex-column justify-content-center align-items-center align-items-xl-start mx-5">
-                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard t">
+                  <h1 className="ms-0 ms--4 py-3 fw-semibold inTextCard">
                     Japanese
                   </h1>
+                  <div className="d-block d-xl-none align-self-center">
+                    <img
+                      src="../assets/certificatesImages/Japanese.png"
+                      alt="mercury"
+                      className="newCarouselImage"
+                      style={{ borderRadius: "20px" }}
+                    />
+                  </div>
                   <span className="inTextCard">
-                    <h6 className="py-3">
+                    <h6 className="py-4 text-center text-xl-start">
                       This is the zone between Mars and Jupiter where we can
                       find asteroids of different sizes, shapes and
                       compositions.

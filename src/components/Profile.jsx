@@ -29,7 +29,7 @@ const Profile = forwardRef((props, ref) => {
           </h4>
         </div>
 
-        <div className="mx-5 mb-5 d-flex flex-column justify-content-center align-items-center">
+        <div className=" mb-5 d-flex flex-column justify-content-center align-items-center">
           <h1>Skills</h1>
 
           <div

@@ -65,11 +65,10 @@ COLOR PALETTE:
 */
 
 #homeContainer {
-  background-color: #212121;
-}
-
-#homeContent {
-  background-color: #212121;
+  background-image: url("./assets/endless-constellation.svg");
+  background-size: auto;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay color */
+  background-blend-mode: multiply; /* Blend mode for opacity effect */
 }
 
 /*------------------------------------------------------------------- navbar -------------------*/
@@ -317,7 +316,7 @@ COLOR PALETTE:
 
 #carouselCard {
   width: 400px;
-  height: 400px;
+  height: 00px;
 }
 
 .carouselImage {
