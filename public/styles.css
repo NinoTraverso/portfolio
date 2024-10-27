@@ -160,44 +160,35 @@ COLOR PALETTE:
 }
 */
 
-#smallNavbar {
+#Navbar {
   background-color: #f5f5f5;
   color: #212121;
   width: 100%;
   position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
+  top: 0;
+  left: 0; /* Aligns it with the left edge of the screen */
+  z-index: 100; /* Ensures it stays on top of other elements */
 }
 
-@media (min-width: 1200px) {
-  #smallNavbar {
-    display: none;
-  }
-}
-
-.smallSectionButton {
-  margin: 50px 50px;
-
-  width: 20px;
-  height: 20px;
+.SectionButton {
+  width: 90px;
+  height: 40px;
   background-color: #364f6b;
   border: none;
-  border-radius: 45%;
+  border-radius: 12px;
   position: relative;
   transition: width 0.4s, height 0.4s;
 }
 
-.smallSectionButton:hover,
-.smallSectionButton.active {
-  width: 26px;
-  height: 26px;
+.SectionButton:hover,
+.SectionButton.active {
+  width: 96px;
+  height: 46px;
   background-color: #3fc1c9;
 }
 
-.smallSectionButton:hover .buttonText,
-.smallSectionButton.active .buttonText {
+.SectionButton:hover .buttonText,
+.SectionButton.active .buttonText {
   color: #364f6b;
   display: inline-block;
 }

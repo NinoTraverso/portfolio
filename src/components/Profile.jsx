@@ -2,8 +2,12 @@ import React, { forwardRef } from "react";
 
 const Profile = forwardRef((props, ref) => {
   return (
-    <div id="profile" ref={ref} className="profileSection">
-      <div className="d-flex flex-column flex-xl-row justify-content-between aling-items-center ">
+    <div id="profile" ref={ref} className="profileSection mt-5">
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="d-flex flex-column flex-xl-row justify-content-between aling-items-center">
         <div className=" d-flex flex-column justify-content-center align-items-center">
           <h1>Nino J. Traverso</h1>
           <h1>Web Developer & Designer</h1>

@@ -58,6 +58,55 @@ function App() {
       <meta name="description" content="Nino Traverso Digital Portfolio." />
       <meta name="keywords" content="portfolio, web design, web development" />
       <div id="homeContainer" className="d-flex flex-column flex-row">
+        <navbar
+          id="navbar"
+          className="d-flex  flex-row justify-content-end align-items-center py-3 fixed-top"
+        >
+          <button
+            className={`SectionButton sectionOne my-3 mx-2 ${
+              activeButton === "Profile" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Profile");
+              profileSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Profile</span>
+          </button>
+          <button
+            className={`SectionButton sectionTwo my-3 mx-2 ${
+              activeButton === "Projects" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Projects");
+              projectsSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Projects</span>
+          </button>
+          <button
+            className={`SectionButton sectionThree my-3 mx-2 ${
+              activeButton === "Certificates" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Certificates");
+              certificatesSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Certificates</span>
+          </button>
+          <button
+            className={`SectionButton sectionFour my-3 mx-2 ${
+              activeButton === "Contact" ? "active" : ""
+            }`}
+            onClick={() => {
+              setActiveButton("Contact");
+              contactSection.current?.scrollIntoView({ behavior: "auto" });
+            }}
+          >
+            <span className="buttonText">Contact</span>
+          </button>
+        </navbar>
         <div ref={profileSection} id="profileSection">
           <Profile />
         </div>
@@ -69,57 +118,6 @@ function App() {
         </div>
         <div ref={contactSection} id="contactSection" className="mb-5">
           <Contact />
-        </div>
-
-        <div
-          id="smallNavbar"
-          className="d-flex d-xl-none flex-row justify-content-center align-items-center py-4"
-          style={{ height: "5%", width: "100%" }}
-        >
-          <button
-            className={`smallSectionButton sectionOne my-3 ${
-              activeButton === "Profile" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Profile");
-              profileSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Profile</span>
-          </button>
-          <button
-            className={`smallSectionButton sectionTwo my-3 ${
-              activeButton === "Projects" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Projects");
-              projectsSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Projects</span>
-          </button>
-          <button
-            className={`smallSectionButton sectionThree my-3 ${
-              activeButton === "Certificates" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Certificates");
-              certificatesSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Certificates</span>
-          </button>
-          <button
-            className={`smallSectionButton sectionFour my-3 ${
-              activeButton === "Contact" ? "active" : ""
-            }`}
-            onClick={() => {
-              setActiveButton("Contact");
-              contactSection.current?.scrollIntoView({ behavior: "auto" });
-            }}
-          >
-            <span className="buttonText">Contact</span>
-          </button>
         </div>
       </div>
     </div>
