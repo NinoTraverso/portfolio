@@ -176,6 +176,45 @@ COLOR PALETTE:
   color: #ffffff;
   display: inline-block;
 }
+
+#navSmall {
+  display: none !important;
+}
+
+@media screen and (max-width: 640px) {
+  #navSmall {
+    display: block !important;
+    width: 100%;
+    background-color: #212121;
+    overflow: hidden;
+    height: 100px;
+  }
+
+  #navSmall.expand {
+    animation: expandNav 1.5s forwards ease;
+  }
+
+  #navSmall.collapse {
+    animation: collapseNav 1.5s forwards ease;
+  }
+  / @keyframes expandNav {
+    0% {
+      height: 100px;
+    }
+    100% {
+      height: 100vh;
+    }
+  }
+  @keyframes collapseNav {
+    0% {
+      height: 100vh;
+    }
+    100% {
+      height: 100px;
+    }
+  }
+}
+
 /*------------------------------------------------------------------- PROFILE -----------------*/
 
 /*

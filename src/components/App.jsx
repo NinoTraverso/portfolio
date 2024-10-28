@@ -15,6 +15,7 @@ function App() {
   const [activeButton, setActiveButton] = useState("Profile");
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isNavbarExpanded, setIsNavbarExpanded] = useState(false);
 
   useEffect(() => {
     const sections = [
@@ -56,9 +57,9 @@ function App() {
       const currentScrollPos = window.pageYOffset;
 
       if (currentScrollPos < scrollPosition) {
-        setIsNavbarVisible(true); // Show navbar when scrolling up
+        setIsNavbarVisible(true);
       } else {
-        setIsNavbarVisible(false); // Hide navbar when scrolling down
+        setIsNavbarVisible(false);
       }
 
       setScrollPosition(currentScrollPos);
@@ -71,6 +72,10 @@ function App() {
     };
   }, [scrollPosition]);
 
+  const handleSmallNavButtonClick = () => {
+    setIsNavbarExpanded(!isNavbarExpanded);
+  };
+
   return (
     <div
       id="appContainer"
@@ -81,6 +86,7 @@ function App() {
       <meta name="keywords" content="portfolio, web design, web development" />
 
       <div id="homeContainer" className="d-flex flex-column flex-row">
+        {/* ------------------------------------------------ NAV 640px ABOVE ---------------------------------------- */}
         <nav
           id="navbar"
           className={`d-flex flex-row justify-content-between align-items-center mt-3 py-1 fixed-top mx-auto ${
@@ -139,6 +145,27 @@ function App() {
             </button>
           </div>
         </nav>
+        {/* ------------------------------------------------ NAV 640px BELOW ---------------------------------------- */}
+        <nav
+          id="navSmall"
+          className={`d-flex flex-row justify-content-between align-items-center py-3 fixed-top mx-auto ${
+            isNavbarVisible ? "show" : "hide"
+          } ${isNavbarExpanded ? "expand" : ""}`}
+        >
+          <div className="d-flex flex-row justify-content-between align-items-center">
+            <div id="navLogo" className="mx-4">
+              <img src="../assets/logo.png" alt="" />
+            </div>
+            <button
+              id="navSmallButton"
+              className="mx-4"
+              onClick={handleSmallNavButtonClick}
+            >
+              <h1 className="text-dark">Hello</h1>
+            </button>
+          </div>
+        </nav>
+        {/* ------------------------------------------------ SECTIONS ---------------------------------------- */}
         <div ref={profileSection} id="profileSection">
           <Profile />
         </div>
