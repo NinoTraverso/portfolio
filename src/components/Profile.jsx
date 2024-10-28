@@ -7,7 +7,7 @@ const Profile = forwardRef((props, ref) => {
       <br />
       <br />
       <br />
-      <div className="d-flex flex-column flex-xl-row justify-content-between aling-items-center">
+      <div className="d-flex flex-column flex-xl-row justify-content-around aling-items-center">
         <div className=" d-flex flex-column justify-content-center align-items-center">
           <h1>Nino J. Traverso</h1>
           <h1>Web Developer & Designer</h1>
