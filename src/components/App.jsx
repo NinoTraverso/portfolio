@@ -13,6 +13,8 @@ function App() {
   const contactSection = useRef(null);
 
   const [activeButton, setActiveButton] = useState("Profile");
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const sections = [
@@ -49,6 +51,26 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if (currentScrollPos < scrollPosition) {
+        setIsNavbarVisible(true); // Show navbar when scrolling up
+      } else {
+        setIsNavbarVisible(false); // Hide navbar when scrolling down
+      }
+
+      setScrollPosition(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
   return (
     <div
       id="appContainer"
@@ -57,10 +79,13 @@ function App() {
       <title>NinoTraversoPortfolio</title>
       <meta name="description" content="Nino Traverso Digital Portfolio." />
       <meta name="keywords" content="portfolio, web design, web development" />
+
       <div id="homeContainer" className="d-flex flex-column flex-row">
-        <navbar
+        <nav
           id="navbar"
-          className="d-flex flex-row justify-content-between align-items-center py-3 fixed-top mx-auto"
+          className={`d-flex flex-row justify-content-between align-items-center mt-3 py-1 fixed-top mx-auto ${
+            isNavbarVisible ? "show" : "hide"
+          }`}
         >
           <div id="navLogo" className="mx-4">
             <img src="../assets/logo.png" alt="" />
@@ -113,7 +138,7 @@ function App() {
               <span className="buttonText">Contact</span>
             </button>
           </div>
-        </navbar>
+        </nav>
         <div ref={profileSection} id="profileSection">
           <Profile />
         </div>

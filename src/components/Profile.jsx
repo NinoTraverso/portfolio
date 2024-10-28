@@ -13,13 +13,13 @@ const Profile = forwardRef((props, ref) => {
           <h1>Web Developer & Designer</h1>
           <div className="profileImage">
             <img
-              src="./assets/profileImage.png"
+              src="./assets/profileImageClean.png"
               alt="profileImage"
               className="img-fluid"
             />
           </div>
 
-          <h4 id="profileIntro" className="text-center mx-5 my-3">
+          <h4 id="profileIntro" className="text-center mx-5">
             With a diverse background in tourism, astronomy, and web
             development, I excel in customer service, logistics, analytical
             abilities, and technical skills. Proficient in HTML, CSS,
@@ -81,7 +81,7 @@ const Profile = forwardRef((props, ref) => {
             </div>
 
             <div className="col col-4 col-md-4 col-lg-4 col-xl-3 py-5">
-              <i class="devicon-github-original"></i>
+              <i className="devicon-github-original"></i>
             </div>
           </div>
         </div>

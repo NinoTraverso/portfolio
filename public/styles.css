@@ -87,8 +87,19 @@ COLOR PALETTE:
 */
 
 #navbar {
+  background-color: rgba(54, 79, 107, 0.6);
+  border-radius: 14px;
   width: 60%;
   z-index: 100;
+  transition: transform 0.3s ease-in-out;
+}
+
+#navbar.show {
+  transform: translateY(0); /* Navbar visible */
+}
+
+#navbar.hide {
+  transform: translateY(-120%); /* Navbar hidden */
 }
 
 #navLogo {
@@ -145,6 +156,11 @@ COLOR PALETTE:
 .profileImage {
   width: 300px;
   height: auto;
+  background-image: url("./assets/profileImageBackground.svg");
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+  border-radius: 30px;
 }
 
 .profileImage img {

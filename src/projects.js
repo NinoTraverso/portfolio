@@ -19,7 +19,7 @@ const projects = [
     projectLink: "https://cutz-n-trimz.vercel.app/",
   },
   {
-    id: 1,
+    id: 3,
     name: "ObservaSky",
     img: "../assets/projectsImages/observaSky.jpg",
     description:
