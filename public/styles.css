@@ -310,140 +310,6 @@ COLOR PALETTE:
   height: 80vh;
 }
 
-#carouselCard {
-  width: 400px;
-  height: 00px;
-}
-
-.carouselImage {
-  width: 400px;
-  height: 600px;
-}
-
-#cardContainer {
-  width: 1100px;
-  border-radius: 20px;
-  background-color: #121212;
-  padding: 40px;
-  padding-left: 0px;
-  border: 2px solid #c0c0c0;
-  min-height: 500px; /*   allows the card container to stay the same height */
-}
-
-.newCarouselImage {
-  width: 400px;
-  height: 300px;
-  margin-left: -50px;
-}
-
-@media screen and (max-width: 1199px) {
-  #cardContainer {
-    width: 700px;
-    height: 840px;
-    padding-left: 40px;
-    padding-top: 0px;
-    text-align: center;
-  }
-  .newCarouselImage {
-    width: 500px;
-    height: 340px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 890px) {
-  #cardContainer {
-    width: 600px;
-    height: 820px;
-    padding-left: 40px;
-    padding-top: 0px;
-    text-align: center;
-  }
-  .newCarouselImage {
-    width: 500px;
-    height: 340px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #cardContainer {
-    width: 470px;
-    height: 860px;
-    padding-left: 40px;
-    padding-top: 0px;
-    text-align: center;
-  }
-  .newCarouselImage {
-    width: 400px;
-    height: 260px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #cardContainer {
-    width: 340px;
-    height: 1000px;
-    padding-left: 40px;
-    padding-top: 0px;
-    text-align: center;
-  }
-  .newCarouselImage {
-    width: 320px;
-    height: 220px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #cardContainer {
-    width: 280px;
-    height: 1020px;
-    padding-left: 40px;
-    padding-top: 0px;
-    text-align: center;
-  }
-  .newCarouselImage {
-    width: 240px;
-    height: 160px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  #cardContainer {
-    width: 220px;
-    height: 980px;
-    padding-left: 40px;
-    padding-top: 0px;
-    text-align: center;
-  }
-  .newCarouselImage {
-    width: 200px;
-    height: 130px;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-.inTextCard {
-  text-align: start;
-}
-
-.button-container {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
 /*-------------------------------------------------------FLIP CARDS ---------------------------------*/
 
 .flip-card {
@@ -512,6 +378,85 @@ COLOR PALETTE:
   text-align: center;
 }
 
+@media screen and (max-width: 740px) {
+  .flip-card-inner {
+    position: relative;
+    width: 460px;
+    height: 340px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 460px;
+    height: 340px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .flip-card-inner {
+    position: relative;
+    width: 420px;
+    height: 320px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 420px;
+    height: 320px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip-card-inner {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
 /*------------------------------------------------------------------- CONTACT -----------------*/
 
 /*
