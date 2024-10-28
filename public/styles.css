@@ -197,7 +197,7 @@ COLOR PALETTE:
   #navSmall.collapse {
     animation: collapseNav 1.5s forwards ease;
   }
-  / @keyframes expandNav {
+  @keyframes expandNav {
     0% {
       height: 100px;
     }
