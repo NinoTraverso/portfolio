@@ -1,15 +1,4 @@
 /*
-
-COLORS
-
-DARK-GRAY: #222831 / rgb(34, 40, 49)
-GRAY: #393E46 / rgb(57, 62, 70)
-BLUE: #0092CA / rgb(0, 146, 202)
-WHITE: #EEEEEE / rgb(238, 238, 238)
-
-*/
-
-/*
 COLOR PALETTE: 
 
 1) #364f6b / rgb(54,79,107) - blue
@@ -48,21 +37,80 @@ body {
 * {
   color: rgb(238, 238, 238);
 }
+
+#sectionTitle {
+  font-size: 100px;
+  width: 500px;
+  height: 140px;
+  color: #364f6b;
+  background-image: url("./assets/profileImageBackground.svg");
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
+  border-radius: 30px;
+}
+
+.projectsSectionImage {
+  width: 500px;
+  height: auto;
+}
+
+.projectsSectionImage img {
+  width: 500px;
+  height: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  #sectionTitle {
+    font-size: 80px;
+    width: 380px;
+    height: 110px;
+  }
+  .projectsSectionImage {
+    width: 380px;
+    height: auto;
+  }
+
+  .projectsSectionImage img {
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #sectionTitle {
+    font-size: 60px;
+    width: 300px;
+    height: 80px;
+  }
+  .projectsSectionImage {
+    width: 300px;
+    height: auto;
+  }
+
+  .projectsSectionImage img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #sectionTitle {
+    font-size: 50px;
+    width: 280px;
+    height: 70px;
+  }
+  .projectsSectionImage {
+    width: 280px;
+    height: auto;
+  }
+
+  .projectsSectionImage img {
+    width: 280px;
+    height: auto;
+  }
+}
 /*------------------------------------------------------------------- HOME CONTENT -------------------*/
-/*
-COLOR PALETTE: 
-
-1) #364f6b / rgb(54,79,107) - blue
-2) #3fc1c9 / rgb(63,193,201) - light-blue
-3) #f5f5f5 / rgb(245,245,245) - whitesmoke
-4) #fc5185 / rgb(252,81,133) - pink
-5) #212121 / rgb(33,33,33) - dark-gray
-6) #757575 / rgb(117,117,117)- gray
-7) #BDBDBD / rgb(189,189,189) - light-gray
-8) #ffffff / rgb(255,255,255) - white
-
-
-*/
 
 #homeContainer {
   background-image: url("./assets/endless-constellation.svg");

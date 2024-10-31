@@ -218,7 +218,27 @@ function App() {
         <div ref={profileSection} id="profileSection">
           <Profile />
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div ref={projectsSection} id="projectsSection">
+          <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <h1 id="sectionTitle" className="text-center mb-5 mt-xl-none">
+              Projects
+            </h1>
+            <div className="projectsSectionImage mt-5 mt-xl-none">
+              <img
+                src="./assets/sectionImages/projects.png"
+                alt="projectsSectionImage"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
           <Projects />
         </div>
         <div ref={certificatesSection} id="certificatesSection">
