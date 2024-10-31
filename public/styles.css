@@ -224,11 +224,13 @@ COLOR PALETTE:
   width: 96px;
   height: 46px;
   background-color: #3fc1c9;
+  border: 2px solid #364f6b;
+  color: #364f6b;
 }
 
 .SectionButton:hover .buttonText,
 .SectionButton.active .buttonText {
-  color: #ffffff;
+  color: #f5f5f5;
   display: inline-block;
 }
 
