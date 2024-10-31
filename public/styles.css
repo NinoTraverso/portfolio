@@ -63,7 +63,7 @@ body {
 @media screen and (max-width: 1100px) {
   #sectionTitle {
     font-size: 80px;
-    width: 380px;
+    width: 400px;
     height: 110px;
   }
   .projectsSectionImage {

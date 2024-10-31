@@ -225,7 +225,7 @@ function App() {
         <br />
         <div ref={projectsSection} id="projectsSection">
           <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
-            <h1 id="sectionTitle" className="text-center mb-5 mt-xl-none">
+            <h1 id="sectionTitle" className="text-center my-5 mt-xl-none">
               Projects
             </h1>
             <div className="projectsSectionImage mt-5 mt-xl-none">
@@ -241,10 +241,52 @@ function App() {
           <br />
           <Projects />
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <div ref={certificatesSection} id="certificatesSection">
+          <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <h1 id="sectionTitle" className="text-center my-5 mt-xl-none">
+              Certificates
+            </h1>
+            <div className="projectsSectionImage mt-5 mt-xl-none">
+              <img
+                src="./assets/sectionImages/certificates.png"
+                alt="projectsSectionImage"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Certificates />
         </div>
-        <div ref={contactSection} id="contactSection" className="mb-5">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div ref={contactSection} id="contactSection" className="my-5">
+          <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
+            <h1 id="sectionTitle" className="text-center my-5 mt-xl-none">
+              Contact
+            </h1>
+            <div className="projectsSectionImage mt-5 mt-xl-none">
+              <img
+                src="./assets/sectionImages/contact.png"
+                alt="projectsSectionImage"
+              />
+            </div>
+          </div>
+
+          <br />
+          <br />
+          <br />
           <Contact />
         </div>
       </div>
