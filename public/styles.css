@@ -251,13 +251,17 @@ COLOR PALETTE:
   #navSmall {
     display: block !important;
     width: 100%;
-    background-color: #212121;
+    background-color: rgba(54, 79, 107, 0.6);
     overflow: hidden;
     height: 90px;
     transition: height 1.5s ease;
   }
 
   #navSmall.expand {
+    background-image: url("./assets/profileImageBackground.svg");
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center;
     height: 100vh;
   }
 

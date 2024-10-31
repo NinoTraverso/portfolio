@@ -165,10 +165,10 @@ function App() {
               <img src="../assets/logo.png" alt="" />
             </div>
             <button
-              className="collapsedNavButton"
+              className="collapsedNavButton mx-3"
               onClick={handleSmallNavButtonClick}
             >
-              <h1 className="pt-1">Home</h1>
+              <h1 className="pt-1 ">Home</h1>
             </button>
           </div>
           <div className="d-flex flex-column justify-content-center align-items-center mt-5 mx-5">
