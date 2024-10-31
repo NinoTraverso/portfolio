@@ -19,7 +19,7 @@ function ProjectCards(props) {
           <h5 className="details projectDetails text-center text-xl-start my-4">
             {props.details}
           </h5>
-          <h5 className="details projectDetails text-center text-xl-start my-4">
+          <h5 className="details projectTecnologies text-center text-xl-start my-4">
             <span className="fw-semibold">Technology:</span> {props.technology}
           </h5>
           <div className="d-flex justify-content-center justify-content-xl-start mt-4">

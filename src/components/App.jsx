@@ -73,7 +73,21 @@ function App() {
   }, [scrollPosition]);
 
   const handleSmallNavButtonClick = () => {
-    setIsNavbarExpanded(!isNavbarExpanded);
+    const newNavbarState = !isNavbarExpanded;
+    setIsNavbarExpanded(newNavbarState);
+
+    if (newNavbarState) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
+  const handleSectionButtonClick = (sectionRef, sectionName) => {
+    setActiveButton(sectionName);
+    setIsNavbarExpanded(false);
+    document.body.classList.remove("no-scroll");
+    sectionRef.current?.scrollIntoView({ behavior: "auto" });
   };
 
   return (
@@ -101,10 +115,9 @@ function App() {
               className={`SectionButton sectionOne my-3 mx-2 ${
                 activeButton === "Profile" ? "active" : ""
               }`}
-              onClick={() => {
-                setActiveButton("Profile");
-                profileSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
+              onClick={() =>
+                handleSectionButtonClick(profileSection, "Profile")
+              }
             >
               <span className="buttonText">Profile</span>
             </button>
@@ -112,10 +125,9 @@ function App() {
               className={`SectionButton sectionTwo my-3 mx-2 ${
                 activeButton === "Projects" ? "active" : ""
               }`}
-              onClick={() => {
-                setActiveButton("Projects");
-                projectsSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
+              onClick={() =>
+                handleSectionButtonClick(projectsSection, "Projects")
+              }
             >
               <span className="buttonText">Projects</span>
             </button>
@@ -123,12 +135,9 @@ function App() {
               className={`SectionButton sectionThree my-3 mx-2 ${
                 activeButton === "Certificates" ? "active" : ""
               }`}
-              onClick={() => {
-                setActiveButton("Certificates");
-                certificatesSection.current?.scrollIntoView({
-                  behavior: "auto",
-                });
-              }}
+              onClick={() =>
+                handleSectionButtonClick(certificatesSection, "Certificates")
+              }
             >
               <span className="buttonText">Certificates</span>
             </button>
@@ -136,10 +145,9 @@ function App() {
               className={`SectionButton sectionFour my-3 mx-2 ${
                 activeButton === "Contact" ? "active" : ""
               }`}
-              onClick={() => {
-                setActiveButton("Contact");
-                contactSection.current?.scrollIntoView({ behavior: "auto" });
-              }}
+              onClick={() =>
+                handleSectionButtonClick(contactSection, "Contact")
+              }
             >
               <span className="buttonText">Contact</span>
             </button>
@@ -161,7 +169,49 @@ function App() {
               className="mx-4"
               onClick={handleSmallNavButtonClick}
             >
-              <h1 className="text-dark">Hello</h1>
+              <h1 className="text-dark">Menu</h1>
+            </button>
+          </div>
+          <div className="d-flex flex-column justify-content-center align-items-center mt-5 mx-5">
+            <button
+              className={`SectionButton sectionOne my-3 mx-2 ${
+                activeButton === "Profile" ? "active" : ""
+              }`}
+              onClick={() =>
+                handleSectionButtonClick(profileSection, "Profile")
+              }
+            >
+              <span className="buttonText">Profile</span>
+            </button>
+            <button
+              className={`SectionButton sectionTwo my-3 mx-2 ${
+                activeButton === "Projects" ? "active" : ""
+              }`}
+              onClick={() =>
+                handleSectionButtonClick(projectsSection, "Projects")
+              }
+            >
+              <span className="buttonText">Projects</span>
+            </button>
+            <button
+              className={`SectionButton sectionThree my-3 mx-2 ${
+                activeButton === "Certificates" ? "active" : ""
+              }`}
+              onClick={() =>
+                handleSectionButtonClick(certificatesSection, "Certificates")
+              }
+            >
+              <span className="buttonText">Certificates</span>
+            </button>
+            <button
+              className={`SectionButton sectionFour my-3 mx-2 ${
+                activeButton === "Contact" ? "active" : ""
+              }`}
+              onClick={() =>
+                handleSectionButtonClick(contactSection, "Contact")
+              }
+            >
+              <span className="buttonText">Contact</span>
             </button>
           </div>
         </nav>
