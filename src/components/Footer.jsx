@@ -6,9 +6,9 @@ function Footer() {
     <footer className="">
       <div className="d-flex flex-column justify-content-around align-items-center">
         <div className="d-flex flex-row justify-content-around align-items-center w-100 mt-4">
-          <div id="footerLogo" className="mx-4">
+          <a href="#profile" id="footerLogo" className="mx-4">
             <img src="../assets/logo.png" alt="" />
-          </div>
+          </a>
           <div>
             <a
               href="https://github.com/NinoTraverso"
