@@ -1,10 +1,3 @@
-<style>
-  body {
-    background-color: white;
-    color: black; /* Optional: set the text color to black for better readability */
-  }
-</style>
-
 <h1 align="center">NJT</h1>
 
 ###
