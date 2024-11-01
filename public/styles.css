@@ -514,6 +514,25 @@ COLOR PALETTE:
   margin-top: 0px;
 }
 
+.flip-card-button {
+  z-index: 50;
+  overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #212121;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #3fc1c9;
+}
+
+.flip-card-button h1 {
+  margin-top: 5px;
+  margin-left: 1px;
+  font-size: 40px;
+}
+
 .flip-card-back {
   background-color: #1d1d1d;
   color: white;

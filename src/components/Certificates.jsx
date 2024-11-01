@@ -31,6 +31,9 @@ function Certificates() {
                   className="newCarouselImage"
                   style={{ borderRadius: "20px" }}
                 />
+                <button className="flip-card-button d-flex justify-content-center align-items-center">
+                  <h1 className="fw-semibold">+</h1>
+                </button>
               </div>
               <div className="flip-card-back">
                 <h3>{cert.title}</h3>
