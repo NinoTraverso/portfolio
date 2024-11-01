@@ -16,13 +16,11 @@ function Certificates() {
   };
 
   return (
-    <Carousel>
+    <Carousel indicators={false}>
+      {" "}
       {certificates.map((cert, index) => (
         <Carousel.Item key={index}>
-          <div
-            className={`flip-card ${flipped[index] ? "flipped" : ""}`}
-            onClick={() => handleFlip(index)}
-          >
+          <div className={`flip-card ${flipped[index] ? "flipped" : ""}`}>
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
@@ -31,26 +29,32 @@ function Certificates() {
                   className="newCarouselImage"
                   style={{ borderRadius: "20px" }}
                 />
-                <button className="flip-card-button d-flex justify-content-center align-items-center">
+
+                <button
+                  className="flip-card-button d-flex justify-content-center align-items-center"
+                  onClick={() => handleFlip(index)}
+                >
                   <h1 className="fw-semibold">+</h1>
                 </button>
               </div>
               <div className="flip-card-back">
-                <h3>{cert.title}</h3>
-                <p>{cert.description}</p>
+                <h3 style={{ color: "#fc5185" }} className="fw-bold">
+                  {cert.title}
+                </h3>
+                <p className="d-none d-md-block">{cert.description}</p>
                 <p>
                   <strong>Skills:</strong> {cert.skills}
                 </p>
-                <p>
+                <p className="d-none d-sm-block">
                   <strong>Level:</strong> {cert.level}
                 </p>
                 <p>
                   <strong>Time:</strong> {cert.time}
                 </p>
-                <p>
+                <p className="d-none d-sm-block">
                   <strong>Institution:</strong> {cert.institution}
                 </p>
-                <p>
+                <p className="d-none d-sm-block">
                   <strong>Grade:</strong> {cert.grade}
                 </p>
                 {cert.link && (
@@ -63,6 +67,13 @@ function Certificates() {
                     Learn more
                   </a>
                 )}
+
+                <button
+                  className="flip-card-front-button d-flex justify-content-center align-items-center"
+                  onClick={() => handleFlip(index)}
+                >
+                  <h1 className="fw-semibold">-</h1>
+                </button>
               </div>
             </div>
           </div>
