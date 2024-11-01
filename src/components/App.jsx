@@ -162,9 +162,24 @@ function App() {
           } ${isNavbarExpanded ? "expand" : ""}`}
         >
           <div className="d-flex flex-row justify-content-between align-items-center">
-            <a href="#profile" id="navLogo" className="mx-4">
-              <img src="../assets/logo.png" alt="logo" />
-            </a>
+            <div className="d-flex flew-row justify-content-start align-items-center">
+              <a href="#profile" id="navLogo" className="ms-4 me-2">
+                <img src="../assets/logo.png" alt="logo" />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/ninotraverso-developer-astronomy-planetarysciences/"
+                className="text-decoration-none mx-1"
+              >
+                <i className="linkedinIconNav devicon-linkedin-plain"></i>
+              </a>
+              <a
+                href="https://github.com/NinoTraverso"
+                className="text-decoration-none mx-1"
+              >
+                <i className=" githubIconNav devicon-github-original"></i>
+              </a>
+            </div>
             <button
               className="collapsedNavButton mx-3"
               onClick={handleSmallNavButtonClick}

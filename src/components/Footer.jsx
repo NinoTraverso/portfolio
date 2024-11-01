@@ -14,14 +14,14 @@ function Footer() {
               href="https://github.com/NinoTraverso"
               className="text-decoration-none mx-2"
             >
-              <i class=" githubIcon devicon-github-original"></i>
+              <i className=" githubIconFooter devicon-github-original"></i>
             </a>
 
             <a
               href="https://www.linkedin.com/in/ninotraverso-developer-astronomy-planetarysciences/"
               className="text-decoration-none mx-2"
             >
-              <i class="linkedinIcon devicon-linkedin-plain"></i>
+              <i className="linkedinIconFooter devicon-linkedin-plain"></i>
             </a>
           </div>
         </div>
