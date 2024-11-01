@@ -221,11 +221,11 @@ function App() {
 
         <div ref={projectsSection} id="projectsSection">
           <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
             <h1 id="sectionTitle" className="text-center my-5 mt-xl-none">
               Projects
             </h1>
@@ -245,11 +245,11 @@ function App() {
 
         <div ref={certificatesSection} id="certificatesSection">
           <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
             <h1 id="sectionTitle" className="text-center my-5 mt-xl-none">
               Certificates
             </h1>
@@ -261,21 +261,21 @@ function App() {
             </div>
           </div>
 
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <br className="d-blcok d-xl-none" />
+          <br className="d-blcok d-xl-none" />
+          <br className="d-blcok d-xl-none" />
+          <br className="d-blcok d-xl-none" />
+          <br className="d-blcok d-xl-none" />
           <Certificates />
         </div>
 
         <div ref={contactSection} id="contactSection" className="my-5">
           <div className="d-flex flex-column flex-md-row justify-content-around align-items-center">
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
+            <br className="d-blcok d-xl-none" />
             <h1 id="sectionTitle" className="text-center my-5 mt-xl-none">
               Contact
             </h1>
