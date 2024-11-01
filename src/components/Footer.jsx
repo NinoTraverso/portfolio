@@ -7,7 +7,7 @@ function Footer() {
       <div className="d-flex flex-column justify-content-around align-items-center">
         <div className="d-flex flex-row justify-content-around align-items-center w-100 mt-4">
           <a href="#profile" id="footerLogo" className="mx-4">
-            <img src="../assets/logo.png" alt="" />
+            <img src="../assets/logo.png" alt="logo" />
           </a>
           <div>
             <a

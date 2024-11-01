@@ -108,9 +108,9 @@ function App() {
             isNavbarVisible ? "show" : "hide"
           }`}
         >
-          <div id="navLogo" className="mx-4">
+          <a href="#profile" id="navLogo" className="mx-4">
             <img src="../assets/logo.png" alt="" />
-          </div>
+          </a>
           <div className="mx-5">
             <button
               className={`SectionButton sectionOne my-3 mx-2 ${
@@ -162,9 +162,9 @@ function App() {
           } ${isNavbarExpanded ? "expand" : ""}`}
         >
           <div className="d-flex flex-row justify-content-between align-items-center">
-            <div id="navLogo" className="mx-4">
-              <img src="../assets/logo.png" alt="" />
-            </div>
+            <a href="#profile" id="navLogo" className="mx-4">
+              <img src="../assets/logo.png" alt="logo" />
+            </a>
             <button
               className="collapsedNavButton mx-3"
               onClick={handleSmallNavButtonClick}
