@@ -846,3 +846,39 @@ COLOR PALETTE:
   color: #212121;
   border: 2px solid #757575;
 }
+
+/*------------------------------------------------------------------- FOOTER -----------------*/
+/*
+COLOR PALETTE: 
+
+1) #364f6b / rgb(54,79,107) - blue
+2) #3fc1c9 / rgb(63,193,201) - light-blue
+3) #f5f5f5 / rgb(245,245,245) - whitesmoke
+4) #fc5185 / rgb(252,81,133) - pink
+5) #212121 / rgb(33,33,33) - dark-gray
+6) #757575 / rgb(117,117,117)- gray
+7) #BDBDBD / rgb(189,189,189) - light-gray
+8) #ffffff / rgb(255,255,255) - white
+*/
+
+footer {
+  width: 100%;
+  background-color: rgba(33, 33, 33, 0.7);
+}
+
+#footerLogo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+#footerLogo img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.githubIcon,
+.linkedinIcon {
+  font-size: 60px;
+}

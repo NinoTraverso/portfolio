@@ -5,6 +5,7 @@ import Profile from "./Profile";
 import Projects from "./Projects";
 import Certificates from "./Certificates";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   const profileSection = useRef(null);
@@ -291,6 +292,9 @@ function App() {
           <br />
           <br />
           <Contact />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </div>
