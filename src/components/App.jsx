@@ -261,11 +261,11 @@ function App() {
             </div>
           </div>
 
-          <br className="d-blcok d-xl-none" />
-          <br className="d-blcok d-xl-none" />
-          <br className="d-blcok d-xl-none" />
-          <br className="d-blcok d-xl-none" />
-          <br className="d-blcok d-xl-none" />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <Certificates />
         </div>
 

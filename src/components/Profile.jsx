@@ -19,7 +19,7 @@ const Profile = forwardRef((props, ref) => {
             />
           </div>
 
-          <h4 id="profileIntro" className="text-center mx-5">
+          <h4 id="profileIntro" className="text-center mx-5 mt-4">
             With a diverse background in tourism, astronomy, and web
             development, I excel in customer service, logistics, analytical
             abilities, and technical skills. Proficient in HTML, CSS,
