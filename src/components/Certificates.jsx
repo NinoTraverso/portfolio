@@ -6,6 +6,7 @@ function Certificates() {
   const [flipped, setFlipped] = useState(
     Array(certificates.length).fill(false)
   );
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleFlip = (index) => {
     setFlipped((prev) => {
@@ -13,11 +14,28 @@ function Certificates() {
       newFlipped[index] = !newFlipped[index];
       return newFlipped;
     });
+
+    setTimeout(() => {
+      setFlipped((prev) => {
+        const newFlipped = [...prev];
+        newFlipped[index] = false;
+        return newFlipped;
+      });
+    }, 20000); // 20 seconds
+  };
+
+  const handleSlideChange = (selectedIndex) => {
+    setActiveIndex(selectedIndex);
+
+    setFlipped(Array(certificates.length).fill(false));
   };
 
   return (
-    <Carousel indicators={false}>
-      {" "}
+    <Carousel
+      indicators={false}
+      activeIndex={activeIndex}
+      onSelect={handleSlideChange}
+    >
       {certificates.map((cert, index) => (
         <Carousel.Item key={index}>
           <div className={`flip-card ${flipped[index] ? "flipped" : ""}`}>
@@ -29,7 +47,6 @@ function Certificates() {
                   className="newCarouselImage"
                   style={{ borderRadius: "20px" }}
                 />
-
                 <button
                   className="flip-card-button d-flex justify-content-center align-items-center"
                   onClick={() => handleFlip(index)}
@@ -67,7 +84,6 @@ function Certificates() {
                     Learn more
                   </a>
                 )}
-
                 <button
                   className="flip-card-front-button d-flex justify-content-center align-items-center"
                   onClick={() => handleFlip(index)}
