@@ -378,6 +378,7 @@ COLOR PALETTE:
 */
 
 .projectName {
+  font-size: 80px;
   color: #fc5185;
 }
 
@@ -417,6 +418,13 @@ COLOR PALETTE:
     height: auto;
     border-radius: 16px;
   }
+  .projectName {
+    font-size: 60px;
+    color: #fc5185;
+  }
+  #projectInfo * {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -430,6 +438,10 @@ COLOR PALETTE:
     height: auto;
     border-radius: 16px;
   }
+  .projectName {
+    font-size: 50px;
+    color: #fc5185;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -442,6 +454,13 @@ COLOR PALETTE:
     max-width: 210px;
     height: auto;
     border-radius: 16px;
+  }
+  .projectName {
+    font-size: 40px;
+    color: #fc5185;
+  }
+  #projectInfo * {
+    font-size: 14px;
   }
 }
 
@@ -464,6 +483,19 @@ COLOR PALETTE:
 
 #certificatesCarousel {
   height: 80vh;
+}
+
+#certificateVisitLink {
+  color: #f5f5f5;
+  text-decoration: none;
+  background-color: #364f6b;
+  border: 2px solid #3fc1c9;
+  border-radius: 6px;
+  transition: background-color 0.8s ease, border-color 0.8s ease;
+}
+
+#certificateVisitLink:hover {
+  background-color: #3fc1c9;
 }
 
 /*-------------------------------------------------------FLIP CARDS ---------------------------------*/

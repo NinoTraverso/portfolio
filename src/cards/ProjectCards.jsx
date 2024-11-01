@@ -12,7 +12,7 @@ function ProjectCards(props) {
         <div id="projectImgContainer" className="mx-5">
           <img src={props.img} alt={props.name} className="img" />
         </div>
-        <div className="mx-5 ">
+        <div id="projectInfo" className="mx-5 ">
           <h3 className="name projectName d-none d-xl-block text-center text-xl-start fw-bold ">
             {props.name}
           </h3>
@@ -25,7 +25,7 @@ function ProjectCards(props) {
           <div className="d-flex justify-content-center justify-content-xl-start mt-4">
             <a
               href={props.projectLink}
-              className="projectDetailsButton text-decoration-none text-center text-xl-start py-2 px-3"
+              className="projectDetailsButton text-decoration-none text-center text-xl-start  py-2 px-3"
             >
               Visit
             </a>

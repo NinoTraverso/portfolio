@@ -76,8 +76,9 @@ function Certificates() {
                 </p>
                 {cert.link && (
                   <a
+                    id="certificateVisitLink"
                     href={cert.link}
-                    className="text-decoration-none text-white"
+                    className="text-decoration-none text-white px-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
