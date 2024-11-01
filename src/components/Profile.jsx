@@ -9,8 +9,10 @@ const Profile = forwardRef((props, ref) => {
       <br />
       <div className="d-flex flex-column flex-xl-row justify-content-around aling-items-center">
         <div className=" d-flex flex-column justify-content-center align-items-center">
-          <h1>Nino J. Traverso</h1>
-          <h1>Web Developer & Designer</h1>
+          <h1 className="titleName fw-semibold">Nino J. Traverso</h1>
+          <h1 className="titleProfession fw-semibold">
+            Web Developer & Designer
+          </h1>
           <div className="profileImage">
             <img
               src="./assets/profileImageClean.png"
@@ -30,7 +32,7 @@ const Profile = forwardRef((props, ref) => {
         </div>
 
         <div className=" mb-5 d-flex flex-column justify-content-center align-items-center">
-          <h1>Skills</h1>
+          <h1 className="titleSkills fw-bold mt-5 mt-xl-none">Skills</h1>
 
           <div
             id="skillsIcons"

@@ -289,6 +289,19 @@ COLOR PALETTE:
 8) #ffffff / rgb(255,255,255) - white
 */
 
+.titleName {
+  font-size: 60px;
+}
+
+.titleProfession {
+  font-size: 60px;
+  color: #fc5185;
+}
+
+.titleSkills {
+  font-size: 40px;
+}
+
 #profileIntro {
   max-width: 700px;
 }
@@ -336,6 +349,17 @@ COLOR PALETTE:
   padding-bottom: 0.4em;
 }
 
+@media screen and (max-width: 1365px) {
+  .titleName,
+  .titleProfession {
+    font-size: 40px;
+  }
+
+  .titleSkills {
+    font-size: 36px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #skillsIcons i {
     font-size: 4em;
@@ -357,6 +381,26 @@ COLOR PALETTE:
     font-size: 2.4em;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
+  }
+
+  .titleName,
+  .titleProfession {
+    font-size: 30px;
+  }
+
+  .titleSkills {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .titleName,
+  .titleProfession {
+    font-size: 23px;
+  }
+
+  .titleSkills {
+    font-size: 30px;
   }
 }
 
