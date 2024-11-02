@@ -1,9 +1,13 @@
 import React, { forwardRef } from "react";
 import { ContactUs } from "../cards/ContactForm";
+import Analytics from "./Analytics";
+import SpeedInsights from "./SpeedInsights";
 
 const Contact = forwardRef((props, ref) => {
   return (
     <div ref={ref} className="contactSection">
+      <Analytics />
+      <SpeedInsights />
       <div className="contact-container d-flex flex-column justify-content-center align-items-center">
         <div className="nav-separator d-none d-xl-block"></div>
         <br className="d-block d-xl-none" />

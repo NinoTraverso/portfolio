@@ -1,6 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-
+import { Helmet } from "react-helmet";
+import Analytics from "./Analytics";
+import SpeedInsights from "./SpeedInsights";
 import Profile from "./Profile";
 import Projects from "./Projects";
 import Certificates from "./Certificates";
@@ -96,9 +98,14 @@ function App() {
       id="appContainer"
       className="d-flex justify-content-center align-items-center"
     >
-      <title>NinoTraversoPortfolio</title>
-      <meta name="description" content="Nino Traverso Digital Portfolio." />
-      <meta name="keywords" content="portfolio, web design, web development" />
+      <Helmet>
+        <title>NinoTraversoPortfolio</title>
+        <meta name="description" content="Nino Traverso Digital Portfolio." />
+        <meta
+          name="keywords"
+          content="portfolio, web design, web development"
+        />
+      </Helmet>
 
       <div id="homeContainer" className="d-flex flex-column flex-row">
         {/* ------------------------------------------------ NAV 640px ABOVE ---------------------------------------- */}
@@ -326,6 +333,8 @@ function App() {
           <Contact />
         </div>
         <div>
+          <Analytics />
+          <SpeedInsights />
           <Footer />
         </div>
       </div>

@@ -1,6 +1,9 @@
 import React, { forwardRef } from "react";
 import ProjectCards from "../cards/ProjectCards";
 import projects from "../projects";
+import Analytics from "./Analytics";
+import SpeedInsights from "./SpeedInsights";
+
 function createProjectCard(project) {
   return (
     <div key={project.id} className="col-12 pb-5 d-flex justify-content-center">
@@ -19,6 +22,8 @@ function createProjectCard(project) {
 const Projects = forwardRef((props, ref) => {
   return (
     <div id="projects" ref={ref} className="projectsSection ">
+      <Analytics />
+      <SpeedInsights />
       <div>{projects.map(createProjectCard)}</div>
     </div>
   );
