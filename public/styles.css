@@ -656,6 +656,31 @@ COLOR PALETTE:
   text-align: center;
 }
 
+@media screen and (max-width: 860px) {
+  .flip-card-button,
+  .flip-card-front-button {
+    z-index: 110;
+    overflow: hidden;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+  }
+  .flip-card-button h1 {
+    margin-top: 8px;
+    margin-left: 1px;
+    font-size: 26px;
+  }
+  .flip-card-front-button h1 {
+    margin-top: 4px;
+    margin-right: 1px;
+    font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 740px) {
   .flip-card-inner {
     position: relative;
@@ -673,6 +698,29 @@ COLOR PALETTE:
     backface-visibility: hidden;
     border-radius: 20px;
     overflow: hidden;
+  }
+
+  .flip-card-button,
+  .flip-card-front-button {
+    z-index: 110;
+    overflow: hidden;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  .flip-card-button h1 {
+    margin-top: 8px;
+    margin-left: 1px;
+    font-size: 20px;
+  }
+  .flip-card-front-button h1 {
+    margin-top: 4px;
+    margin-right: 1px;
+    font-size: 20px;
   }
 }
 
@@ -713,31 +761,6 @@ COLOR PALETTE:
     backface-visibility: hidden;
     border-radius: 20px;
     overflow: hidden;
-  }
-
-  .flip-card-button,
-  .flip-card-front-button {
-    z-index: 110;
-    overflow: hidden;
-    position: absolute;
-    bottom: 4px;
-    left: 76%;
-    transform: translateX(-50%);
-
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-  }
-
-  .flip-card-button h1 {
-    margin-top: 8px;
-    margin-right: 1px;
-    font-size: 30px;
-  }
-  .flip-card-front-button h1 {
-    margin-top: 4px;
-    margin-right: 1px;
-    font-size: 30px;
   }
 }
 
