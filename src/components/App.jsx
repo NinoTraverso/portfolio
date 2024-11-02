@@ -144,6 +144,8 @@ function App() {
                 handleSectionButtonClick(profileSection, "Profile")
               }
             >
+              <Analytics />
+              <SpeedInsights />
               <span className="buttonText">Profile</span>
             </button>
             <button

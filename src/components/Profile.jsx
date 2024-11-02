@@ -1,12 +1,8 @@
 import React, { forwardRef } from "react";
-import Analytics from "./Analytics";
-import SpeedInsights from "./SpeedInsights";
 
 const Profile = forwardRef((props, ref) => {
   return (
     <div id="profile" ref={ref} className="profileSection mt-5">
-      <Analytics />
-      <SpeedInsights />
       <br />
       <br />
       <br />
