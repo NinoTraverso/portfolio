@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import certificates from "../certificates";
-import Analytics from "./Analytics";
-import SpeedInsights from "./SpeedInsights";
 
 function Certificates() {
   const [flipped, setFlipped] = useState(
@@ -34,8 +32,6 @@ function Certificates() {
 
   return (
     <div>
-      <Analytics />
-      <SpeedInsights />
       <Carousel
         indicators={false}
         activeIndex={activeIndex}

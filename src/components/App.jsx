@@ -108,6 +108,8 @@ function App() {
       </Helmet>
 
       <div id="homeContainer" className="d-flex flex-column flex-row">
+        <Analytics />
+        <SpeedInsights />
         {/* ------------------------------------------------ NAV 640px ABOVE ---------------------------------------- */}
         <nav
           id="navbar"
@@ -256,8 +258,6 @@ function App() {
         </nav>
         {/* ------------------------------------------------ SECTIONS ---------------------------------------- */}
         <div ref={profileSection} id="profileSection">
-          <Analytics />
-          <SpeedInsights />
           <Profile />
         </div>
 
