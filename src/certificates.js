@@ -23,7 +23,7 @@ const certificates = [
     time: "63 hours",
     institution: "Udemy",
     grade: "100%",
-    link: "https://epicode.com/en/",
+    link: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
   },
   {
     title: "Web & Mobile Design",
@@ -36,7 +36,7 @@ const certificates = [
     time: "28 hours",
     institution: "Udemy",
     grade: "100%",
-    link: "https://epicode.com/en/",
+    link: "https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/",
   },
   {
     title: "Astronomy",
@@ -48,7 +48,7 @@ const certificates = [
     time: "29 hours",
     institution: "Coursera (Caltech)",
     grade: "100%",
-    link: "https://epicode.com/en/",
+    link: "https://www.coursera.org/learn/solar-system",
   },
   {
     title: "Astrobiology",
@@ -61,7 +61,7 @@ const certificates = [
     time: "11 hours",
     institution: "Coursera (University of Edinburgh)",
     grade: "100%",
-    link: "https://epicode.com/en/",
+    link: "https://www.coursera.org/learn/astrobiology",
   },
   {
     title: "Japanese",
@@ -74,7 +74,7 @@ const certificates = [
     time: "30 hours",
     institution: "EDX (Waseda University)",
     grade: "100%",
-    link: "https://epicode.com/en/",
+    link: "https://courses.edx.org/courses/course-v1:WasedaX+SJB1-1.101x+1T2022/b72e6241f83d48d1bb44aa2601683906/",
   },
 ];
 
