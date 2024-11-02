@@ -144,8 +144,6 @@ function App() {
                 handleSectionButtonClick(profileSection, "Profile")
               }
             >
-              <Analytics />
-              <SpeedInsights />
               <span className="buttonText">Profile</span>
             </button>
             <button
@@ -258,6 +256,8 @@ function App() {
         </nav>
         {/* ------------------------------------------------ SECTIONS ---------------------------------------- */}
         <div ref={profileSection} id="profileSection">
+          <Analytics />
+          <SpeedInsights />
           <Profile />
         </div>
 
@@ -335,8 +335,6 @@ function App() {
           <Contact />
         </div>
         <div>
-          <Analytics />
-          <SpeedInsights />
           <Footer />
         </div>
       </div>
