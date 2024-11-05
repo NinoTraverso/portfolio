@@ -38,44 +38,6 @@ const certificates = [
     grade: "100%",
     link: "https://www.udemy.com/course/complete-web-designer-mobile-designer-zero-to-mastery/",
   },
-  {
-    title: "Astronomy",
-    image: "../assets/certificatesImages/TheScienceOfTheSolarSystem.png",
-    description:
-      "Study of celestial bodies, planets, moons, asteroids, and comet characteristics.",
-    skills: "Astronomy, Solar Systems, Chemistry, Geology, Astrobiology",
-    level: "Foundational",
-    time: "29 hours",
-    institution: "Coursera (Caltech)",
-    grade: "100%",
-    link: "https://www.coursera.org/learn/solar-system",
-  },
-  {
-    title: "Astrobiology",
-    image:
-      "../assets/certificatesImages/AstrobiologyAndTheSearchForExtraterrestrialLife.png",
-    description:
-      "Exploration of astrobiology, microbiology, and the search for extraterrestrial life.",
-    skills: "Solar System, Biology, Microbiology, Astrobiology",
-    level: "Foundational",
-    time: "11 hours",
-    institution: "Coursera (University of Edinburgh)",
-    grade: "100%",
-    link: "https://www.coursera.org/learn/astrobiology",
-  },
-  {
-    title: "Japanese",
-    image: "../assets/certificatesImages/Japanese.png",
-    description:
-      "Introduction to Japanese language and culture, including vocabulary, basic grammar, and conversational phrases.",
-    skills:
-      "Basic vocabulary, Fundamental grammar, Pronunciation, Listening, Conversational phrases",
-    level: "Foundational",
-    time: "30 hours",
-    institution: "EDX (Waseda University)",
-    grade: "100%",
-    link: "https://courses.edx.org/courses/course-v1:WasedaX+SJB1-1.101x+1T2022/b72e6241f83d48d1bb44aa2601683906/",
-  },
 ];
 
 export default certificates;
