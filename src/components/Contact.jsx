@@ -12,7 +12,7 @@ const Contact = forwardRef((props, ref) => {
         <div className="form-container pb-5">
           <ContactUs />
         </div>
-        <div className="d-none d-xl-block separator mx-1"></div>
+        <div className="d-none d-xl-block separator mx-4"></div>
       </div>
     </div>
   );
